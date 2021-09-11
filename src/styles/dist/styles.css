@@ -1,0 +1,188 @@
+@import "http://fonts.googleapis.com/css?family=Avenir";
+.form-group {
+  margin-top: 2rem;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #232323;
+  display: block;
+  margin-bottom: 2px;
+}
+.form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: solid 1px #cddbff;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  height: 45px;
+  transition: all 0.3s ease-out;
+}
+.form-group .form-control:hover, .form-group .form-control:focus {
+  border: solid 2px #cddbff;
+  outline: none;
+}
+
+.btn {
+  height: 4.5rem;
+  flex-grow: 0;
+  margin: 3rem 0 1.5rem;
+  border-radius: 0.5rem;
+  border: solid 0.2rem #0071fb;
+  opacity: 1;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #0071fb;
+  line-height: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.btn:hover {
+  border-color: #005bca;
+  background-color: #e0dede;
+}
+
+.btn-primary {
+  background-color: #0071fb;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #005bca;
+}
+
+.or-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.or-line div:not(.text) {
+  height: 1px;
+  width: 100%;
+  background-color: #cddbff;
+}
+.or-line .text {
+  margin: 0 5px;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #cddbff;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mx-0 {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-2-5 {
+  margin-top: 2.5rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f7f6f6;
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}

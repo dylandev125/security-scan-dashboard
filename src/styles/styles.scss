@@ -1,0 +1,30 @@
+@import "./variables";
+@import "./fonts";
+@import "./button";
+@import "./text";
+@import "./form";
+@import "./grid";
+// @import "./ant-override";
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #f7f6f6;
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
