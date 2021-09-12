@@ -13,7 +13,7 @@ const Layout = (props) => {
       <div className={(props.type === 'login' ? "login-main-layout" : "main-layout")}>
         <Header type={props.type} />
         {props.children}
-        <Footer />
+        <Footer type={props.type} />
       </div>
     </>
   )
