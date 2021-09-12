@@ -1,11 +1,11 @@
 .header {
-  width: 100%;
+
   height: 5.2rem;
   background-color: #2E6AFF;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
+
+  padding: 0 4rem;
   // position: fixed;
   .logo {
     font-family: Avenir, sans-serif;
@@ -13,5 +13,38 @@
     font-size: 3.8rem;
     font-weight: 700;
     color: #fff;
+  }
+}
+
+.search-tab {
+  margin-left: 60px!important;
+  text-align: left;
+  width: 210px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+
+  padding: 0px 10px;
+  margin: 0 0 0 0;
+  background-color: white;
+  color: #232323;
+  &:after {
+    position: absolute;
+    top:50%;
+    right: 10px;
+  }
+  &:hover {
+    background-color: white;
+    color: #232323;
+  }
+
+  &:focus {
+    background-color: white;
+    color: #232323;
+  }
+  &.dropdown-toggle {
+    background-color: white!important;
+    color: #232323!important;
   }
 }

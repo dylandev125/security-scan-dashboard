@@ -5,6 +5,7 @@ import retry from "../utils/retry";
 const HomePage = lazy(() => retry(() => import("../pages/client/home")))
 const LoginPage = lazy(() => retry(() => import("../pages/login")))
 const SignupPage = lazy(() => retry(() => import("../pages/register")))
+const CustomerDashboardPage = lazy(() => retry(() => import("../pages/client/dashboard/Dashboard")))
 
 const AppRoutes = () => {
   return (
