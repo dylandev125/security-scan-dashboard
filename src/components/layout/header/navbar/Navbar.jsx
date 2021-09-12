@@ -1,8 +1,11 @@
 import React, {useState} from "react";
+import './Navbar.scss'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return(
-    <div>
+    <div className='navbar'>
+      <p>sdafasdffs</p>
+      <p>sdafasdffs</p>
       {/* Navbar */}
     </div>
   )

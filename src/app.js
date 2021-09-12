@@ -5,7 +5,8 @@ import Middlewares from "./middleware";
 import ErrorPage from "./components/error-page";
 import SuspenseFallback from "./components/suspense";
 import AppRoutes from "./routes";
-import "./store"
+import 'bootstrap/dist/css/bootstrap.min.css'
+//import "./store"
 
 const App = () => {
   return (
