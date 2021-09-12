@@ -19,7 +19,7 @@ const NormalLogin = (props) => {
       <EmailField name="email" className="form-control" handleChange={handleChange} />
       <PasswordField name="password" className="form-control" handleChange={handleChange}/>
       <ForgotPassword />
-      <Button class="btn btn-primary" title="Log In" onClick={props.handleLogin}/>
+      <Button class="btn btn-primary" title="Log In" handleClick={props.handleLogin}/>
       <div className="or-line">
         <div></div>
         <div className="text">or</div>

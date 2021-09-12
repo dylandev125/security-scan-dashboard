@@ -1,0 +1,16 @@
+.btn-primary {
+    padding: 8px 31px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 2px #779eff;
+    background-color: #fff;
+    color: #232323;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+    
+    &.active {
+        background-color: #779eff;
+    }
+}

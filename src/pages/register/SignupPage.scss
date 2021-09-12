@@ -1,0 +1,32 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 33rem;
+  // margin-top: 20rem;
+  margin: 8rem auto 0 !important;
+  padding: 3rem 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 3.4px 2.7px 0 rgba(202, 202, 202, 0.07), 0 8.7px 6.9px 0 rgba(202, 202, 202, 0.05), 0 17.7px 14.2px 0 rgba(202, 202, 202, 0.04), 0 36.5px 29.2px 0 rgba(202, 202, 202, 0.03), 0 100px 80px 0 rgba(202, 202, 202, 0.02);
+  background-color: #fff;
+  h1 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+  }
+
+  .alert {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: #232323;
+    margin-top: 14px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

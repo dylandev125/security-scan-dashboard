@@ -4,11 +4,14 @@ import Footer from "../../components/layout/footer";
 import NormalLogin from "./steps/NormalLogin";
 import OTPLogin from "./steps/OTPLogin";
 import { LoginConfirmAlerts } from "../../utils/index.js";
+import { Route, Switch, useHistory, useLocation } from 'react-router-dom';
 import "./LoginPage.scss";
 
 const loginComponents = [NormalLogin, OTPLogin];
 
 const LoginPage = (props) => {
+  const history = useHistory();
+
   const [state, setState] = useState({
     currentStep: 0,
     info: {},
@@ -21,7 +24,7 @@ const LoginPage = (props) => {
     };
 
     // get the user info to Server
-    // if the user info is correctt
+    // if the user info is correct
 
     if (state.currentStep === loginComponents.length - 1) {
       alert("Your application was submitted" + JSON.stringify(updatedInfo));
@@ -33,9 +36,13 @@ const LoginPage = (props) => {
     }
   };
 
-  const handleSignup = () => {};
+  const handleSignup = () => {
+    history.push('/signup');
+  };
 
-  const handleOTP = () => {};
+  const handleOTP = () => {
+    history.push('/dashboard');
+  };
 
   const StepComponent = loginComponents[state.currentStep];
 

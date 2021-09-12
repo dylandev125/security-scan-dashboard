@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .form-group {
   margin-top: 2rem;
 
@@ -8,6 +10,10 @@
     color: #232323;
     display: block;
     margin-bottom: 2px;
+  }
+
+  label.muted {
+    color: #707070;
   }
 
   .form-control {
@@ -55,6 +61,7 @@
 .btn-primary {
   background-color: #0071fb;
   color: #fff;
+
   &:hover {
     background-color: #005bca;
   }
@@ -70,12 +77,45 @@
     width: 100%;
     background-color: #cddbff;
   }
+
   .text {
     margin: 0 5px;
-  font-family: Avenir;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  color: #cddbff;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #cddbff;
   }
+}
+
+.stepbar-wrapper {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.step-circle {
+  width:30px;
+  height:30px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+
+  span {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+}
+
+.step-bar {
+  height: 0;
+  border: 2px solid;
+  background-color: black;
+  width: 27px;
 }
