@@ -48,11 +48,11 @@
   background-color: #e0dede;
 }
 
-.btn-primary {
+.custom-btn-primary {
   background-color: #0071fb;
   color: #fff;
 }
-.btn-primary:hover {
+.custom-btn-primary:hover {
   background-color: #005bca;
 }
 

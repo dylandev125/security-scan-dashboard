@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.scss';
 import App from './app';
-
+import './index.scss'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

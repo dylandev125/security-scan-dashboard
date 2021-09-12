@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Header from "../../components/layout/header";
-import Footer from "../../components/layout/footer";
+import Layout from "../../components/layout/Layout";
 import NormalLogin from "./steps/NormalLogin";
 import OTPLogin from "./steps/OTPLogin";
 import { LoginConfirmAlerts } from "../../utils/index.js";
@@ -48,17 +47,17 @@ const LoginPage = (props) => {
 
   return (
     <>
-      <Header />
-      <div className="signup-container">
-        <h1>Logo</h1>
-        <div className="alert">{LoginConfirmAlerts[state.currentStep]}</div>
-        <StepComponent
-          handleLogin={handleLogin}
-          handleSignup={handleSignup}
-          handleOTP={handleOTP}
-        />
-      </div>
-      <Footer />
+      <Layout type='login'>
+        <div className="signup-container">
+          <h1>Logo</h1>
+          <div className="alert">{LoginConfirmAlerts[state.currentStep]}</div>
+          <StepComponent
+            handleLogin={handleLogin}
+            handleSignup={handleSignup}
+            handleOTP={handleOTP}
+          />
+        </div>
+      </Layout>
     </>
   );
 };

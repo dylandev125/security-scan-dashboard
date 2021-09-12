@@ -4,17 +4,15 @@ import Sidebar from './sidebar/Sidebar'
 import Footer from './footer/Footer'
 import './Layout.scss'
 
-const Layout = ( props ) => {
+const Layout = (props) => {
   return (
     <>
       {props.type !== 'login' &&
         <Sidebar type={props.type} />
       }
-      <div className={ (props.type === 'login'? "login-main-layout" : "main-layout")}>
+      <div className={(props.type === 'login' ? "login-main-layout" : "main-layout")}>
         <Header type={props.type} />
-        <div>
-          {props.children}
-        </div>
+        {props.children}
         <Footer />
       </div>
     </>

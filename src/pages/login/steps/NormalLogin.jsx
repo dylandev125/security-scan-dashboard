@@ -19,13 +19,13 @@ const NormalLogin = (props) => {
       <EmailField name="email" className="form-control" handleChange={handleChange} />
       <PasswordField name="password" className="form-control" handleChange={handleChange}/>
       <ForgotPassword />
-      <Button class="btn btn-primary" title="Log In" handleClick={props.handleLogin}/>
+      <Button class="custom-btn custom-btn-primary" title="Log In" handleClick={props.handleLogin}/>
       <div className="or-line">
         <div></div>
         <div className="text">or</div>
         <div></div>
       </div>
-      <Button class="btn mt-2-5" title="Sign Up for Free" handleClick={props.handleSignup}/>
+      <Button class="custom-btn mt-2-5" title="Sign Up for Free" handleClick={props.handleSignup}/>
     </div>
   )
 }

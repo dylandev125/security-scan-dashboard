@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Header from "../../components/layout/header";
-import Footer from "../../components/layout/footer";
+import Layout from "../../components/layout/Layout";
 import { SignupConfirmAlerts } from "../../utils/index.js";
 import FirstStep from './steps/FirstStep';
 import SecondStep from './steps/SecondStep';
@@ -33,7 +32,7 @@ const SignupPage = () => {
       ...state.info,
     }
 
-    if (state.currentStep === stepComponents.length-2) {
+    if (state.currentStep === stepComponents.length - 2) {
       alert('Your application was submitted' + JSON.stringify(updatedInfo));
       setState({
         info: updatedInfo,
@@ -51,14 +50,14 @@ const SignupPage = () => {
 
   return (
     <>
-      <Header />
-      <div className="signup-container">
-        <h1>Logo</h1>
-        <div className="alert">{SignupConfirmAlerts[state.currentStep]}</div>
-        <StepBar maxStep={3} currentStep={state.currentStep} />
-        <StepComponent info={state.info} handleNext={goToNext} />
-      </div>
-      <Footer />
+      <Layout type='login'>
+        <div className="signup-container">
+          <h1>Logo</h1>
+          <div className="alert">{SignupConfirmAlerts[state.currentStep]}</div>
+          <StepBar maxStep={3} currentStep={state.currentStep} />
+          <StepComponent info={state.info} handleNext={goToNext} />
+        </div>
+      </Layout>
     </>
   )
 }
