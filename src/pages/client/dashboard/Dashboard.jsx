@@ -4,7 +4,7 @@ import Header from '../../../components/layout/header/Header'
 const Dashboard = () => {
   return (
     <>
-      <Layout type={'dashboard'}/>
+      <Layout type={'login'}/>
     </>
   )
 }
