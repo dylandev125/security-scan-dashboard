@@ -10,7 +10,9 @@ const ScannedItem = (props) => {
         <div className="site-title">
           <div className="sitelogo" 
                style={{borderColor: props.logo ? props.logo.borderColor: '#50d786'}}>
-            <span style={{color: props.logo ? props.logo.color : 'rgba(0, 0, 0, 0.85)'}}>B</span>
+            <span style={{color: props.logo ? props.logo.color : 'rgba(0, 0, 0, 0.85)'}}>
+              {props.logo ? props.logo.letter : 'B'}
+            </span>
           </div>
           <div className="sitename">
             <span><strong>Example name</strong></span>

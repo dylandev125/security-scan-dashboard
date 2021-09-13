@@ -7,6 +7,7 @@ const LoginPage = lazy(() => retry(() => import("../pages/login")))
 const SignupPage = lazy(() => retry(() => import("../pages/register")))
 const CustomerDashboardPage = lazy(() => retry(() => import("../pages/client/dashboard/Dashboard")));
 const SecurityScanPage = lazy(() => retry(() => import("../pages/client/security")));
+const CustomerBillingPage = lazy(() => retry(() => import("../pages/client/Billing/Billing")))
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path={["/", "/login"]} exact={true} component={LoginPage} />
       <Route path="/scan" exact={true} component={SecurityScanPage} />
       <Route path="/dashboard" component={CustomerDashboardPage} />
+      <Route path="/billing" component={CustomerBillingPage} />
     </Switch>
   )
 }

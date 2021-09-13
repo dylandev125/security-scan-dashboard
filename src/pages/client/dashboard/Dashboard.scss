@@ -1,0 +1,238 @@
+.content-wrapper {
+  height: 100%;
+  padding: 63px 42px 172px 42px;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 16px;
+  grid-template-columns: repeat(11 , 2fr);
+  grid-template-rows: repeat(2 , 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+  flex: 1;
+
+  table {
+    width: 100%;
+  }
+
+  thead {
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: 900;
+    .title-id {width:13%}
+    .title-des {width:38%}
+    .title-risk {width:13%}
+    .title-inst {width:13%}
+    .title-btn {width:23%}
+  }
+  tbody {
+    font-size: 12px;
+    td {
+      padding-top: 5px;
+      vertical-align: top;
+    }
+    td:not(:last-child) {
+      padding-right: 50px;
+    }
+    tr:first-child {
+      td {
+        padding-top: 20px;
+      }
+    }
+    tr:last-child {
+      td {
+        padding-bottom: 24px;
+      }
+      border-bottom: 1px solid #cddbff;
+    }
+    .riskView-2 {
+      display: flex;
+      align-items: center;
+      .criticalBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #fc5c79;
+      }
+      .highBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #ffb36e;
+      }
+      .mediumBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #fee196;
+      }
+      .lowBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #8bec7c;
+      }
+      .infoBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #5183ff;
+      }
+      .riskText {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+    }
+    .box-btn {
+      width: 142px;
+      height: 35px;
+      border-radius: 10px;
+      border: solid 2px #779eff;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      color: #232323;
+      transition: 0.3s;
+      &:hover {
+        border: solid 2px #2f6bff;
+        background-color: #2f6bff;
+        color: white;
+        font-weight: 900;
+      }
+    }
+    .box-btn:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .btn-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .report-id {
+      position: relative;
+      .report-date {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        font-size: 10px;
+        font-weight: 300;
+        color: #afafaf;
+      }
+    }
+  }
+  .DB-Box {
+    border-radius: 5px;
+    background-color: white;
+    grid-column: 1 / 10;
+    grid-row: 1 / 3;
+    padding: 20px 20px 24px 20px;
+    position: relative;
+
+    .topTitle {
+      display: flex;
+      position: absolute;
+      top: -18px;
+      left: 0px;
+      z-index: 0;
+      height: 18px;
+      background-color: #5284ff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      .topTitle-text {
+        padding: 1px 20px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        color: white;
+      }
+    }
+
+  }
+
+  .Risk-Tab {
+    background-color: white;
+    grid-column: 10 / 12;
+    grid-row: 1 / 2;
+    border-radius: 5px;
+    position: relative;
+    .topTitle {
+      display: flex;
+      position: absolute;
+      top: -18px;
+      left: 0px;
+      z-index: 0;
+      height: 18px;
+      background-color: #5284ff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      .topTitle-text {
+        padding: 1px 20px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        color: white;
+      }
+    }
+  }
+  .Earn-Box {
+    border-radius: 5px;
+    background-color: white;
+    grid-column: 10 / 12;
+    grid-row: 2 / 3;
+    padding: 20px;
+    .title {
+      font-size: 14px;
+      font-weight: 900;
+      color: #232323;
+      margin-bottom: 15px;
+    }
+    .riskView {
+      margin-bottom: 10px;
+      display: flex;
+      .criticalBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #fc5c79;
+      }
+      .highBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #ffb36e;
+      }
+      .mediumBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #fee196;
+      }
+      .lowBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #8bec7c;
+      }
+      .infoBox{
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background-color: #5183ff;
+      }
+      .riskText {
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}

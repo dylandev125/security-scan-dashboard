@@ -1,0 +1,38 @@
+.history-wrapper {
+    margin: 63px auto 145px auto;
+    font-family: Avenir;
+    width: 1196px;
+    position: relative;
+
+    th {
+        background-color: white;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                font-size: 12px;
+            }
+            td:last-child {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .ribon {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: absolute;
+        top: -18px;
+        left: 0;
+        padding: 1px 20px 4px;
+        color: white;
+        background-color: #5284ff;
+        font-size: 12px;
+    }
+}

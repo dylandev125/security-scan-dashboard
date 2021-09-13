@@ -4,7 +4,7 @@ const InputGroup = (props) => {
   return (
     <div className="form-group">
       <label htmlFor={props.name}>{props.label}</label>
-      <label class="muted">{props.extraLabel}</label>
+      <label className="muted">{props.extraLabel}</label>
       <input
         type={props.type}
         name={props.name}

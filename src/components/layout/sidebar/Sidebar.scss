@@ -31,7 +31,6 @@
     align-items: center;
     justify-content: center;
   }
-  
   .sidebar-link{
     width: 46px;
     height: 46px;
@@ -43,7 +42,7 @@
       z-index: 999;
     }
 
-    &.active {
+    &:hover, &.active {
       .sidebar-backlay {
         position: absolute;
         top: 0px;

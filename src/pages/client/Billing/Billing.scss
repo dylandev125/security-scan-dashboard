@@ -1,0 +1,42 @@
+.billing-wrapper {
+  width: 1046px;
+  margin: 61px auto 145px auto;
+  position: relative;
+  .ribon {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    height: 19px;
+    padding: 1px 20px 4px;
+    color: white;
+    background-color: #5284ff;
+    font-size: 12px;
+  }
+  .panel-primary {
+    height: auto;
+    .billing-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .button-group {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .MuiPaper-rounded {
+      box-shadow: none;
+      table {
+        th {
+          background-color: white;
+        }
+        td {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
