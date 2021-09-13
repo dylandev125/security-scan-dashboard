@@ -27,7 +27,6 @@ const Billing = () => {
               <Button label="Paid"/>
               <Button label="UnPaid"/>
             </div>
-            
           </div>
           <MSortTable columns={curData.columns} rows={curData.data} defaultSorting={curData.columns[0].key}/>
         </Panel>

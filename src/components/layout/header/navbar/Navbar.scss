@@ -12,15 +12,19 @@
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    cursor: pointer;
     .nav-title {
       padding: 5px 25px 0px 10px;
       font-size: 14px;
       color: #232323;
     }
-    .nav-title-payment {
+    .nav-title-payment{
       font-size: 18px;
-      font-weight: 900;
-      color: #000;
+      font-weight: 300;
+      color: #232323;
+      &.active {
+        font-weight: 900;
+      }
     }
     .value-text {
       font-size: 18px;
@@ -28,6 +32,9 @@
       color: #0071fb;
     }
     margin: 0 50px;
-    border-bottom: 3px solid #2e6aff;
+    border-bottom: 4px solid white;
+    &.active {
+      border-bottom: 4px solid #2e6aff;
+    }
   }
 }
