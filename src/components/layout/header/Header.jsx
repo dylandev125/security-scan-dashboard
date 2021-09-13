@@ -15,33 +15,32 @@ const Header = (props) => {
     <>
     <div className='header'>
       <div className='logo'>Logo</div>
+
+      <div className=''>
       {props.type === 'dashboard' && (
-        <div className='d-flex justify-content-between w-100'>
-          <Dropdown>
-            <Dropdown.Toggle id='dropdown-basic' className='search-tab'>
-              Website List
-            </Dropdown.Toggle>
+        <Dropdown>
+          <Dropdown.Toggle id='dropdown-basic' className='search-tab'>
+            Website List
+          </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              <Dropdown.Item href='#/action-1'>Action</Dropdown.Item>
-              <Dropdown.Item href='#/action-2'>Another action</Dropdown.Item>
-              <Dropdown.Item href='#/action-3'>Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <div className="d-flex gap-5">
+          <Dropdown.Menu>
 
-            <Link to='/'>
-              <SearchIcon/>
-            </Link>
-            <Link to='/'>
-              <NotiIcon/>
-            </Link>
-            <Link to='/'>
-              <ProfileIcon/>
-            </Link>
-          </div>
-        </div>
+          </Dropdown.Menu>
+        </Dropdown>
       )}
+
+      </div>
+      <div className="icon-wrapper d-flex gap-5">
+        <Link to='/'>
+          <SearchIcon/>
+        </Link>
+        <Link to='/'>
+          <NotiIcon/>
+        </Link>
+        <Link to='/'>
+          <ProfileIcon/>
+        </Link>
+      </div>
 
     </div>
     {props.type !== 'login' && (

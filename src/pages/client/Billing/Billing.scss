@@ -1,0 +1,84 @@
+.billing-wrapper {
+  padding: 60px 165px 140px 165px;
+  flex: 1;
+
+  .payment-history {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: white;
+    position: relative;
+    .topTitle {
+      display: flex;
+      position: absolute;
+      top: -18px;
+      left: 0px;
+      z-index: 0;
+      height: 18px;
+      background-color: #5284ff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      .topTitle-text {
+        padding: 1px 20px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        color: white;
+      }
+    }
+
+    .payment-header {
+      display: flex;
+      position: relative;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e8e8e8;
+      .payment-action {
+        width: 142px;
+        height: 35px;
+        border-radius: 5px;
+        border: solid 2px #779eff;
+        background-color: #fff;
+        font-size: 14px;
+        color: #232323;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+        &.active,&:hover{
+          border: solid 2px #2f6bff;
+          background-color: #2f6bff;
+          color: white;
+          font-weight: 900;
+        }
+      }
+      .searchBar {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        height: 35px;
+        border-radius: 5px;
+        border: solid 2px #779eff;
+        background-color: #fff;
+        padding-left: 8px;
+        padding-top: 4px;
+        .search-edit {
+
+          width: 80%;
+          border: none;
+          font-size: 14px;
+          margin-left: 10px;
+          &::placeholder {
+            color: #afafaf;
+          }
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

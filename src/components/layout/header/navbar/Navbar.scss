@@ -1,10 +1,33 @@
 .navbar {
-  height: 5.2rem;
+  height: 52px;
+  padding: 0 0;
   box-shadow: 0 3.4px 2.7px 0 rgba(202, 202, 202, 0.09), 0 8.7px 6.9px 0 rgba(202, 202, 202, 0.06), 0 17.7px 14.2px 0 rgba(202, 202, 202, 0.05), 0 36.5px 29.2px 0 rgba(202, 202, 202, 0.04), 0 100px 80px 0 rgba(202, 202, 202, 0.03);
   background-color: #fff;
 
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items:flex-end;
+  justify-content: center;
 
+  .navItem {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    .nav-title {
+      padding: 5px 25px 0px 10px;
+      font-size: 14px;
+      color: #232323;
+    }
+    .nav-title-payment {
+      font-size: 18px;
+      font-weight: 900;
+      color: #000;
+    }
+    .value-text {
+      font-size: 18px;
+      font-weight: 900;
+      color: #0071fb;
+    }
+    margin: 0 50px;
+    border-bottom: 3px solid #2e6aff;
+  }
 }

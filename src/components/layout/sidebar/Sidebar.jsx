@@ -7,20 +7,38 @@ import { ReactComponent as Paper } from '../../../assets/Paper.svg'
 import { ReactComponent as Setting } from '../../../assets/Setting.svg'
 import { Link } from 'react-router-dom'
 
-const Sidebar = (type) => {
+const Sidebar = (props) => {
   return (
     <div className='sidebar'>
       <div className="icon-top">
-        <Link to='/'> <Category/> </Link>
+        <div className={"sidebar-link " + (props.type === 'category' ? "active" : "")}>
+          <div className="sidebar-backlay"></div>
+          <Link to='/'> <Category/> </Link>
+        </div>
       </div>
       <div className="icon-middle">
-        <Link to='/'> <Scan/> </Link>
-        <Link to='/'> <Home/> </Link>
-        <Link to='/'> <Shield/> </Link>
-        <Link to='/'> <Paper/> </Link>
+        <div className={"sidebar-link " + (props.type === 'scan' ? "active" : "")}>
+          <div className="sidebar-backlay"></div>
+          <Link to='/'> <Scan/> </Link>
+        </div>
+        <div className={"sidebar-link " + (props.type === 'dashboard' ? "active" : "")}>
+          <div className="sidebar-backlay"></div>
+          <Link to='/dashboard'> <Home/> </Link>
+        </div>
+        <div className={"sidebar-link " + (props.type === 'security' ? "active" : "")}>
+          <div className="sidebar-backlay"></div>
+          <Link to='/'> <Shield/> </Link>
+        </div>
+        <div className={"sidebar-link " + (props.type === 'billing' ? "active" : "")}>
+          <div className="sidebar-backlay"></div>
+          <Link to='/billing'> <Paper/> </Link>
+        </div>
       </div>
       <div className="icon-bottom">
-        <Link to='/'> <Setting/> </Link>
+        <div className={"sidebar-link " + (props.type === 'setting' ? "active" : "")}>
+          <div className="sidebar-backlay"></div>
+          <Link to='/'> <Setting/> </Link>
+        </div>
       </div>
     </div>
   )
