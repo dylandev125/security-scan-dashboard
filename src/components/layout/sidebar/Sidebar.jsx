@@ -14,10 +14,22 @@ const Sidebar = (type) => {
         <Link to='/'> <Category/> </Link>
       </div>
       <div className="icon-middle">
-        <Link to='/'> <Scan/> </Link>
-        <Link to='/'> <Home/> </Link>
-        <Link to='/'> <Shield/> </Link>
-        <Link to='/'> <Paper/> </Link>
+        <div class="sidebar-link ">
+          <div class="sidebar-backlay"></div>
+          <Link to='/scan'> <Scan/> </Link>
+        </div>
+        <div class="sidebar-link">
+          <div class="sidebar-backlay"></div>
+          <Link to='/'> <Home/> </Link>
+        </div>
+        <div class="sidebar-link active">
+          <div class="sidebar-backlay"></div>
+          <Link to='/'> <Shield/> </Link>
+        </div>
+        <div class="sidebar-link ">
+          <div class="sidebar-backlay"></div>
+          <Link to='/'> <Paper/> </Link>
+        </div>
       </div>
       <div className="icon-bottom">
         <Link to='/'> <Setting/> </Link>

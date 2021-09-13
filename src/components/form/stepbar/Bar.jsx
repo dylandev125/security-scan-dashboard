@@ -5,7 +5,8 @@ const Bar = (props) => {
     return (
         <>
             <div className="step-bar" style={{
-                borderColor: props.stepNumber <= props.currentStep ? primary : '#232323'
+                borderColor: props.stepNumber <= props.currentStep ? primary : '#232323',
+                backgroundColor: props.stepNumber <= props.currentStep ? primary : '#232323'
             }}>
             </div>
         </>

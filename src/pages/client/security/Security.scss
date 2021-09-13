@@ -1,0 +1,32 @@
+.security-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 950px;
+    margin: auto;
+    text-align: center;
+
+    .panel-primary {
+        margin: 15px 0 0;
+    }
+
+    .previous-scans, .security-scan {
+        font-size: 21px;
+        font-weight: 900;
+    }
+
+    .security-scan {
+        margin-top: 35px;
+    }
+
+    .previous-scans {
+        margin-top: 15px;
+    }
+
+    hr {
+        margin: auto;
+        margin-top: 25px;
+        width: 90%;
+        color: #cddbff;
+    }
+}

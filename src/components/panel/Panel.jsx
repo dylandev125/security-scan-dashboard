@@ -4,7 +4,9 @@ import './Panel.scss';
 const Panel = (props) => {
   return(
     <>
-      <div className="panel-primary"></div>
+      <div className="panel-primary">
+        {props.children}
+      </div>
     </>
   );
 };
