@@ -1,0 +1,48 @@
+.info-container {
+  display: flex;
+  padding: 15px 0px;
+  border-bottom: 1px solid #cddbff;
+  ;
+  .info-title {
+    width: 20%;
+    font-size: 14px;
+    font-weight: 900;
+    color: #232323;
+    display: flex;
+    align-items: center;
+  }
+  .info-content {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #232323;
+  }
+  .info-btn{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    .edit-btn {
+      width: 142px;
+      height: 35px;
+      border-radius: 10px;
+      border: solid 2px #779eff;
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      color: #232323;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+
+      &.active,&:hover{
+        border: solid 2px #2f6bff;
+        background-color: #2f6bff;
+        color: white;
+        font-weight: 900;
+      }
+    }
+  }
+}

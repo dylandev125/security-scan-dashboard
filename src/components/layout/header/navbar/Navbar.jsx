@@ -4,6 +4,7 @@ import { ReactComponent as Plan } from '../../../../assets/plan.svg'
 import './Navbar.scss'
 
 const Navbar = (props) => {
+  const [navState, setNavState] = useState('acc')
   return(
     <div className='navbar'>
       {props.type === 'dashboard' && (
@@ -13,7 +14,23 @@ const Navbar = (props) => {
         </>
       ) ||
       props.type === 'billing' && (
-        <div className='navItem'><span className='nav-title-payment'>PAYMENT HISTORY</span></div>
+        <div className='navItem active'><span className='nav-title-payment active'>PAYMENT HISTORY</span></div>
+      ) ||
+      props.type === 'setting' && (
+        <>
+          <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {setNavState('acc')}}>
+            <span className={'nav-title-payment ' + (navState === 'acc' ? 'active' : '')}>ACCOUNT INFORMATION</span>
+          </div>
+          <div className={'navItem ' + (navState === 'sec' ? 'active' : '')} onClick={() => {setNavState('sec')}}>
+            <span className={'nav-title-payment ' + (navState === 'sec' ? 'active' : '')}>SECURITY</span>
+          </div>
+          <div className={'navItem ' + (navState === 'pay' ? 'active' : '')} onClick={() => {setNavState('pay')}}>
+            <span className={'nav-title-payment ' + (navState === 'pay' ? 'active' : '')}>PAYMENTS AND ORDERS</span>
+          </div>
+          <div className={'navItem ' + (navState === 'sup' ? 'active' : '')} onClick={() => {setNavState('sup')}}>
+            <span className={'nav-title-payment ' + (navState === 'sup' ? 'active' : '')}>SUPPORT</span>
+          </div>
+        </>
       )
       }
     </div>

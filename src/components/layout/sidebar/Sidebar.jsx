@@ -37,7 +37,7 @@ const Sidebar = (props) => {
       <div className="icon-bottom">
         <div className={"sidebar-link " + (props.type === 'setting' ? "active" : "")}>
           <div className="sidebar-backlay"></div>
-          <Link to='/'> <Setting/> </Link>
+          <Link to='/setting'> <Setting/> </Link>
         </div>
       </div>
     </div>
