@@ -2,7 +2,7 @@
   width: 90%;
   margin: 61px auto 145px auto;
   position: relative;
-
+  
   .ribon {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -26,13 +26,7 @@
       justify-content: space-between;
 
       .datepicker-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 142px;
         height: 35px;
-        border: 2px solid #779eff;
-        border-radius: 5px;
         .react-datepicker-wrapper {
           width: auto;
           font-size: 14px;
