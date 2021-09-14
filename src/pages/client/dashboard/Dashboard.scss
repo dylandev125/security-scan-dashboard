@@ -15,7 +15,7 @@
   }
 
   thead {
-    font-size: 14px;
+    font-size: 16px;
     vertical-align: top;
     font-weight: 900;
     .title-id {width:13%}
@@ -28,7 +28,7 @@
     }
   }
   tbody {
-    font-size: 12px;
+    font-size: 14px;
     td {
       padding-top: 5px;
       vertical-align: top;
@@ -86,7 +86,7 @@
         background-color: #5183ff;
       }
       .riskText {
-        font-size: 12px;
+        font-size: 14px;
         color: rgba(0, 0, 0, 0.8);
       }
 
@@ -97,7 +97,7 @@
       border-radius: 10px;
       border: solid 2px #779eff;
       background-color: #fff;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 500;
       color: #232323;
       transition: 0.3s;
@@ -122,7 +122,7 @@
         position: absolute;
         left: 0px;
         bottom: 0px;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 300;
         color: #afafaf;
       }
@@ -152,7 +152,7 @@
         border-top-right-radius: 5px;
         .topTitle-text {
           padding: 1px 20px;
-          font-size: 12px;
+          font-size: 14px;
           font-weight: 500;
           text-align: left;
           color: white;
@@ -178,7 +178,7 @@
       border-top-right-radius: 5px;
       .topTitle-text {
         padding: 1px 20px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         text-align: left;
         color: white;
@@ -192,7 +192,7 @@
     grid-row: 2 / 3;
     padding: 20px;
     .title {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 900;
       color: #232323;
       margin-bottom: 15px;
@@ -236,7 +236,7 @@
         background-color: #5183ff;
       }
       .riskText {
-        font-size: 10px;
+        font-size: 12px;
         color: rgba(0, 0, 0, 0.8);
       }
     }
