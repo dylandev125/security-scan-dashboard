@@ -27,7 +27,7 @@ const Sidebar = (props) => {
         </div>
         <div className={"sidebar-link " + (props.type === 'security' ? "active" : "")}>
           <div className="sidebar-backlay"></div>
-          <Link to='/scan'> <Shield/> </Link>
+          <Link to='/scan'> <Shield /> </Link>
         </div>
         <div className={"sidebar-link " + (props.type === 'billing' ? "active" : "")}>
           <div className="sidebar-backlay"></div>

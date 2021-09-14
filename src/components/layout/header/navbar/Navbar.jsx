@@ -7,15 +7,14 @@ const Navbar = (props) => {
   const [navState, setNavState] = useState(
     props.type === 'setting' && 'acc' ||
     props.type === 'security' && 'scan'
-    )
-
+    );
   return (
     <div className='navbar'>
       {
         props.type === 'dashboard' && (
           <>
-            <div className='navItem'><Issue /><span className='nav-title'>NEW ISSUES</span> <span className='value-text'>0</span></div>
-            <div className='navItem'><Plan /><span className='nav-title'>PLAN</span>        <span className='value-text'>STANDARD</span> </div>
+            <div className='navItem active'><Issue /><span className='nav-title'>NEW ISSUES</span> <span className='value-text'>0</span></div>
+            <div className='navItem active'><Plan /><span className='nav-title'>PLAN</span>        <span className='value-text'>STANDARD</span> </div>
           </>
         ) ||
         props.type === 'billing' && (

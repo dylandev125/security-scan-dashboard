@@ -49,7 +49,7 @@ const PaidData = {
         {
             header: "Expiration/Valid until",
             key: 'expiration_date',
-            width: '25%'
+            width: '20%'
         },
         {
             header: "Plan",
@@ -59,7 +59,7 @@ const PaidData = {
         {
             header: "Payment method",
             key: 'payment_method',
-            width: '15%'
+            width: '20%'
         },
         {
             header: "Status/Date",
@@ -117,7 +117,7 @@ const UnpaidData = {
         {
             header: "Expiration/Valid until",
             key: 'expiration_date',
-            width: '25%'
+            width: '20%'
         },
         {
             header: "Plan",
@@ -127,7 +127,7 @@ const UnpaidData = {
         {
             header: "Payment method",
             key: 'payment_method',
-            width: '15%'
+            width: '20%'
         },
         {
             header: "Status/Date",

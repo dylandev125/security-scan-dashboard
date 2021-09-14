@@ -16,9 +16,12 @@ const FinalStep = (props) => {
                     <div>We will approve your form within <strong>24h</strong></div>
                 </div>
                 <div class="why-to-wait">Why do I have to wait?</div>
-                <div class="what-for">Our platform is welcomed for healthy clients
-                who care about security and privacy.<br></br>
-                We want to bring the best experience<br></br>for our clients.</div>
+                <div class="what-for">
+                    Our platform is welcomed for healthy clients
+                    &nbsp;who care about security and privacy.<br></br>
+                    We want to bring the best experience<br></br>
+                    for our clients.
+                </div>
             </div>
         </>
     )
