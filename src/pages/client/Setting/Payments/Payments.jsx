@@ -1,4 +1,5 @@
 import InfoRow from '../../../../components/InfoRow/InfoRow'
+import PayinfoRow from '../../../../components/InfoRow/PayinfoRaw'
 
 const Payments = () => {
   return (
@@ -11,6 +12,8 @@ const Payments = () => {
             services, except your last name.
           </span>
         </div>
+        <PayinfoRow title='paypal' content='Subscription via PayPal' btn='Subscribe'/>
+        <PayinfoRow title='stripe' content='Subscription via Stripe' btn='Subscribe'/>
         <InfoRow title='Invoice' content='Not Requested' btn='Request' />
       </div>
     </div>
