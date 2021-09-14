@@ -17,7 +17,7 @@ const Button = (props) => {
   };
 
   return (
-    <div class="custom-datepicker-wrapper">
+    <div className="custom-datepicker-wrapper">
 
       <button className="custom-datepicker-btn" onClick={() => { setVisible(!visible) }}>
         <DateIcon />
