@@ -14,7 +14,7 @@ const Header = (props) => {
   return (
     <>
     <div className='header'>
-      <div className='logo'>Logo</div>
+      <div className='logo'><Link className="logo-link" to="/">Logo</Link></div>
 
       <div className=''>
       {props.type === 'dashboard' && (

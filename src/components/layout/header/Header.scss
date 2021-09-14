@@ -9,11 +9,14 @@
   position: relative;
   // position: fixed;
   .logo {
-    font-family: Avenir, sans-serif;
+    font-family: Avenir;
     font-display: initial;
     font-size: 3.8rem;
     font-weight: 700;
-    color: #fff;
+  }
+  .logo-link {
+    text-decoration: none;
+    color: white !important;
   }
   .icon-wrapper {
     position: absolute;

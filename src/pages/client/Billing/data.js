@@ -1,36 +1,75 @@
+import {ReactComponent as PrintIcon} from '../../../assets/print.svg'
+import {ReactComponent as TabIcon} from '../../../assets/new-tab.svg'
+
 const PaidData = {
     data: [
-        { scan_id: '#001122', grade: 'B', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#003209', grade: 'C', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#009102', grade: 'A', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#008651', grade: 'B', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#003461', grade: 'B', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method paypal">PayPal</span>,
+            status_date: <div><span className="paid">Paid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method">stripe</span>,
+            status_date: <div><span className="paid">Paid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method">stripe</span>,
+            status_date: <div><span className="paid">Paid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method paypal">PayPal</span>,
+            status_date: <div><span className="paid">Paid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
     ],
     columns: [
         {
-            header: 'Scan ID',
-            key: 'scan_id',
-            width: '10%'
-        },
-        {
-            header: 'Grade',
-            key: 'grade',
-            width: '10%'
-        },
-        {
-            header: 'Website name',
-            key: 'website_name',
-            width: '15%'
-        },
-        {
-            header: 'website',
-            key: 'website',
+            header: "Date/Invoices",
+            key: 'date_invoices',
             width: '20%'
         },
         {
-            header: 'Date scanned',
-            key: 'date_scanned',
-            width: '20%',
+            header: "Expiration/Valid until",
+            key: 'expiration_date',
+            width: '25%'
+        },
+        {
+            header: "Plan",
+            key: 'plan',
+            width: '15%'
+        },
+        {
+            header: "Payment method",
+            key: 'payment_method',
+            width: '15%'
+        },
+        {
+            header: "Status/Date",
+            key: 'status_date',
+            width: '15%',
+        },
+        {
+            header: 'Total',
+            key: 'total',
+            width: '15%',
         },
         {
             header: ' ',
@@ -41,37 +80,64 @@ const PaidData = {
 
 const UnpaidData = {
     data: [
-        { scan_id: '#001122', grade: 'B', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#003209', grade: 'C', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#009102', grade: 'A', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#008651', grade: 'B', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
-        { scan_id: '#003461', grade: 'B', website_name: 'Example name', website: 'www.example.com', date_scanned: '29. August 2021' },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method">stripe</span>,
+            status_date: <div><span className="unpaid">Unpaid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method paypal">PayPal</span>,
+            status_date: <div><span className="unpaid">Unpaid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
+        {
+            date_invoices: <><span className="text-muted">August 05/2021</span><span>149274728<span className="tab-icon"><TabIcon /></span></span></>,
+            expiration_date: <span className="text-muted">August 31, 2021</span>,
+            plan: <span className="plan">Premium</span>,
+            payment_method: <span className="payment-method">stripe</span>,
+            status_date: <div><span className="unpaid">Unpaid</span><span className="text-muted">August 08, 2021</span></div>,
+            total: <span className="total-paid">149.00 $</span>,
+            button: <button className="print-icon"><PrintIcon /></button>,
+        },
     ],
     columns: [
         {
-            header: 'Scan ID',
-            key: 'scan_id',
-            width: '10%'
-        },
-        {
-            header: 'Grade',
-            key: 'grade',
-            width: '10%'
-        },
-        {
-            header: 'Website name',
-            key: 'website_name',
-            width: '15%'
-        },
-        {
-            header: 'website',
-            key: 'website',
+            header: "Date/Invoices",
+            key: 'date_invoices',
             width: '20%'
         },
         {
-            header: 'Date scanned',
-            key: 'date_scanned',
-            width: '20%',
+            header: "Expiration/Valid until",
+            key: 'expiration_date',
+            width: '25%'
+        },
+        {
+            header: "Plan",
+            key: 'plan',
+            width: '15%'
+        },
+        {
+            header: "Payment method",
+            key: 'payment_method',
+            width: '15%'
+        },
+        {
+            header: "Status/Date",
+            key: 'status_date',
+            width: '15%',
+        },
+        {
+            header: 'Total',
+            key: 'total',
+            width: '15%',
         },
         {
             header: ' ',
@@ -79,4 +145,5 @@ const UnpaidData = {
         }
     ],
 }
-export { PaidData, UnpaidData }
+
+export {PaidData, UnpaidData};

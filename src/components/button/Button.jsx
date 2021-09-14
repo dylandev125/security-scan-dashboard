@@ -4,7 +4,7 @@ import './Button.scss'
 const Button = (props) => {
   
   return (
-    <div className="btn-main" onClick={props.handleClick}>{props.label}</div>
+    <button className="btn-main" onClick={props.handleClick}>{props.label}</button>
   )
 } 
 

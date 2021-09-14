@@ -15,10 +15,17 @@
     transition: all 0.1s ease-in;
     cursor: pointer;
     &.active {
-        background-color: #779eff;
+        border-color: #2f6bff;
+        background-color: #2f6bff;
     }
     &:hover {
-        background-color: #779eff;
+        border-color: #2f6bff;
+        background-color: #2f6bff;
+        color: white;
+    }
+    &:focus {
+        border-color: #2f6bff;
+        background-color: #2f6bff;
         color: white;
     }
 }

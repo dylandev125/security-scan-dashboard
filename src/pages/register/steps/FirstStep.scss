@@ -1,11 +1,21 @@
 .terms-check {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-top: 17px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
+    line-height: 18px;
     
     .form-check-label {
         margin-left: 10px;
+    }
+
+    .terms {
+        font-size: 10px;
+    }
+
+    .terms-strong {
+        color: #2e6aff;
     }
 }

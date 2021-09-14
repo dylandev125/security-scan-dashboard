@@ -40,7 +40,14 @@ const FirstStep = (props) => {
                     extraLabel="Fill only if you have code"
                     className="form-control"
                     handleChange={handleChange} />
-                <Form.Check className="terms-check" type="checkbox" label="I agree to the Terms of Service and Privacy Policy. " />
+                <Form.Check
+                    className="terms-check"
+                    type="checkbox"
+                    label={<span className="terms">I agree to the
+                        <span className="terms-strong"> Terms of Service</span> and
+                        <span className="terms-strong"> Privacy Policy</span>.
+                    </span>} />
+
                 <Button class="custom-btn custom-btn-primary" title="Next" handleClick={props.handleNext} />
             </div>
         </>
