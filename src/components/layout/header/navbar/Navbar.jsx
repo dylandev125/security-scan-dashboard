@@ -4,7 +4,10 @@ import { ReactComponent as Plan } from '../../../../assets/plan.svg'
 import './Navbar.scss'
 
 const Navbar = (props) => {
-  const [navState, setNavState] = useState('acc')
+  const [navState, setNavState] = useState(
+    props.type === 'setting' && 'acc' ||
+    props.type === 'security' && 'scan'
+    )
 
   return (
     <div className='navbar'>
@@ -16,26 +19,30 @@ const Navbar = (props) => {
           </>
         ) ||
         props.type === 'billing' && (
-          <div className='navItem'><span className='nav-title-payment'>PAYMENT HISTORY</span></div>
+          <div className='navItem active'><span className='nav-title-payment active'>PAYMENT HISTORY</span></div>
         ) ||
         props.type === 'security' && (
           <>
-            <div className='navItem' onClick={()=>{props.handleClick(0)}}><span className='nav-title'>SECURITY SCAN</span></div>
-            <div className='navItem' onClick={()=>{props.handleClick(1)}}><span className='nav-title'>HISTORY</span></div>
+            <div className={'navItem ' + (navState === 'scan' ? 'active' : '')} onClick={()=>{props.handleClick(0); setNavState('scan')}}>
+              <span className={'nav-title-payment ' + (navState === 'scan' ? 'active' : '')}>SECURITY SCAN</span>
+            </div>
+            <div className={'navItem ' + (navState === 'hist' ? 'active' : '')} onClick={()=>{props.handleClick(1); setNavState('hist')}}>
+              <span className={'nav-title-payment ' + (navState === 'hist' ? 'active' : '')}>HISTORY</span>
+            </div>
           </>
         ) ||
         props.type === 'setting' && (
         <>
-          <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {setNavState('acc')}}>
+          <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {props.handleClick('acc'); setNavState('acc')}}>
             <span className={'nav-title-payment ' + (navState === 'acc' ? 'active' : '')}>ACCOUNT INFORMATION</span>
           </div>
-          <div className={'navItem ' + (navState === 'sec' ? 'active' : '')} onClick={() => {setNavState('sec')}}>
+          <div className={'navItem ' + (navState === 'sec' ? 'active' : '')} onClick={() => {props.handleClick('sec'); setNavState('sec')}}>
             <span className={'nav-title-payment ' + (navState === 'sec' ? 'active' : '')}>SECURITY</span>
           </div>
-          <div className={'navItem ' + (navState === 'pay' ? 'active' : '')} onClick={() => {setNavState('pay')}}>
+          <div className={'navItem ' + (navState === 'pay' ? 'active' : '')} onClick={() => {props.handleClick('pay'); setNavState('pay')}}>
             <span className={'nav-title-payment ' + (navState === 'pay' ? 'active' : '')}>PAYMENTS AND ORDERS</span>
           </div>
-          <div className={'navItem ' + (navState === 'sup' ? 'active' : '')} onClick={() => {setNavState('sup')}}>
+          <div className={'navItem ' + (navState === 'sup' ? 'active' : '')} onClick={() => {props.handleClick('sup'); setNavState('sup')}}>
             <span className={'nav-title-payment ' + (navState === 'sup' ? 'active' : '')}>SUPPORT</span>
           </div>
         </>
