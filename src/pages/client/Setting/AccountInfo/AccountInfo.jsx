@@ -16,10 +16,10 @@ const AccountInfo = () => {
             <span className='medium-text'>Freelancer </span>choice
           </span>
         </div>
-        <InfoRow />
-        <InfoRow />
-        <InfoRow />
-        <InfoRow />
+        <InfoRow title="Company" content="Lucreds Inc." btn="Edit"/>
+        <InfoRow title="Reg. Number" content="EE12345678" btn="Edit"/>
+        <InfoRow title="Address" content="Meistri 16, Haabersti, Tallinn 13517 EE" btn="Edit"/>
+        <InfoRow title="Company Size" content="Small Company" btn="Edit"/>
       </div>
 
       <div className='box-info'>
@@ -30,10 +30,10 @@ const AccountInfo = () => {
             other users.
           </span>
         </div>
-        <InfoRow />
-        <InfoRow />
-        <InfoRow />
-        <InfoRow />
+        <InfoRow title="Full Name" content="Allan Nalla" btn="Edit"/>
+        <InfoRow title="CMO" content="Allan Nalla" btn="Edit"/>
+        <InfoRow title="Phone" content="+372 555 55 555" btn="Edit"/>
+        <InfoRow title="Email" content="allan@lucreds.com" btn="Edit"/>
       </div>
 
       <div className='box-info'>

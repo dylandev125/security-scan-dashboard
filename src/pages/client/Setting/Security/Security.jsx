@@ -16,8 +16,8 @@ const Security = () => {
             <span className='medium-text'>Freelancer </span>choice
           </span>
         </div>
-        <InfoRow />
-        <InfoRow />
+        <InfoRow title='Password' content='Last Updated 20.08' btn='Edit'/>
+        <InfoRow title='Two-factor authentication' content='ON' btn='Edit'/>
       </div>
     </div>
   )
