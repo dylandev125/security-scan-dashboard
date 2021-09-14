@@ -1,0 +1,26 @@
+.weblist-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px 9.5px 0;
+    border-bottom: 1px solid #cddbff;
+    span {
+        display: block;
+    }
+
+    .web-item-title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #232323;
+    }
+
+    .web-item-operation {
+        display: flex;
+        flex-direction: row;
+        svg {
+            margin-left: 25px;
+        }
+    }
+}

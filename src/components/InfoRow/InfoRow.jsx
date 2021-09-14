@@ -6,7 +6,7 @@ const CompanyInfo = (props) => {
         <div className="info-title">{props.title}</div>
         <div className="info-content">{props.content}</div>
         <div className="info-btn">
-          <button className="edit-btn">Edit</button>
+          <button className="edit-btn">{props.btn}</button>
         </div>
     </div>
   )
