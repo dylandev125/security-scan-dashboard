@@ -7,7 +7,7 @@ const OTPLogin = (props) => {
   return(
     <div className="form">
       <OTPField name="otp" className="form-control" />
-      <Button class="custom-btn custom-btn-primary" title="Verify" handleClick={props.handleOTP}/>
+      <Button className="custom-btn custom-btn-primary" title="Verify" handleClick={props.handleOTP}/>
     </div>
   )
 }

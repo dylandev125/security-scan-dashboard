@@ -48,8 +48,8 @@ const AccountInfo = () => {
           </span>
         </div>
         <InfoRow
-          title={<div class="inforow-title-container"><span>New website</span><span>Limit 2/10</span></div>}
-          content={<div class="inforow-title-container"><span>Enter website name</span>
+          title={<div className="inforow-title-container"><span>New website</span><span>Limit 2/10</span></div>}
+          content={<div className="inforow-title-container"><span>Enter website name</span>
             <span>Enter website address/addresses</span></div>}
           btn="Add"
         />

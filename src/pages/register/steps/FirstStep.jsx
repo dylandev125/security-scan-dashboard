@@ -48,7 +48,7 @@ const FirstStep = (props) => {
                         <span className="terms-strong"> Privacy Policy</span>.
                     </span>} />
 
-                <Button class="custom-btn custom-btn-primary" title="Next" handleClick={props.handleNext} />
+                <Button className="custom-btn custom-btn-primary" title="Next" handleClick={props.handleNext} />
             </div>
         </>
     )

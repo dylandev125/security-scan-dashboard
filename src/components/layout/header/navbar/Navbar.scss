@@ -38,3 +38,21 @@
     }
   }
 }
+
+
+@media (max-width: 1024px) {
+  .navbar{
+    .navItem {
+      margin: 0 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar{
+    .navItem {
+      .nav-title-payment {
+        font-size: 14px;
+      }
+    }
+  }
+}

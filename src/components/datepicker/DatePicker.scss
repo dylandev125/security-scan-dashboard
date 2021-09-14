@@ -1,0 +1,59 @@
+.custom-datepicker-wrapper {
+    width: 100%;
+    position: relative;
+
+    .custom-calendar {
+        width: 350px;
+        top: 0;
+        left: 0;
+    }
+    .calendar-container {
+        position: absolute;
+        max-width: 350px;
+        top: 35px;
+        left: 0;
+        z-index: 3;
+        tabindex: 1;
+    }
+    .react-calendar {
+    }
+}
+
+.custom-datepicker-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 142px;
+    border-radius: 10px;
+    border: solid 2px #779eff;
+    background-color: #fff;
+    color: #232323;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+
+    span {
+        line-height: 30px;
+    }
+
+    &.active {
+        border-color: #2f6bff;
+        background-color: #2f6bff;
+    }
+
+    &:hover {
+        border-color: #2f6bff;
+        background-color: #2f6bff;
+        color: white;
+    }
+
+    &:focus {
+        border-color: #2f6bff;
+        background-color: #2f6bff;
+        color: white;
+    }
+}

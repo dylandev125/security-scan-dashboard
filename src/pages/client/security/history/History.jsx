@@ -31,7 +31,7 @@ const History = () => {
       header: 'Website name',
       key: 'website_name',
       width: '15%'
-    },  
+    },
     {
       header: 'website',
       key: 'website',
