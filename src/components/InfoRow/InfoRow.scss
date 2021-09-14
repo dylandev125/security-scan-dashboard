@@ -46,3 +46,22 @@
     }
   }
 }
+
+.payment-method {
+  border-radius: 3px;
+  background-color: #0071fb;
+  width: 36px;
+  height: 26px;
+  font-size: 10px;
+  color: white;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paypal {
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 400;
+}

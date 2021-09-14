@@ -51,7 +51,7 @@ const History = () => {
   return (
     <>
       <div className="history-wrapper">
-        <div className="ribon">scans done</div>
+        <div className="ribon">SCANS DONE</div>
         <MSortTable columns={columns} rows={state.data} defaultSorting={columns[0].key}/>
       </div>
     </>
