@@ -1,6 +1,6 @@
 .search-box {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 35px;
     width: 100%;
@@ -20,5 +20,25 @@
     &:hover {
         background-color: #779eff;
         color: white;
+    }
+    &:focus {
+        background-color: #779eff;
+    }
+    input {
+        margin-left: 10px;
+        border: none;
+        color: white;
+        outline: 0;
+        background: transparent;
+        width: 98%;
+        height: 90%;
+        &:focus-visible {
+            outline: 0;
+        }
+    }
+    svg {
+        width: 19px;
+        height: 19px;
+        margin-left: 8px;
     }
 }

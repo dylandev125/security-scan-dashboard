@@ -1,1 +1,1 @@
-export {default} from "./Button.jsx"
+export {default} from "./SearchBox.jsx"
