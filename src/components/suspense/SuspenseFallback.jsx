@@ -1,9 +1,10 @@
 import React, {useState} from "react";
+import './Suspense.scss'
 
 const SuspenseFallback = () => {
   return(
-    <div>
-      SuspenseFallback Page
+    <div className="spinner-container">
+      <img src="/loading-spinner.gif" />
     </div>
   );
 };

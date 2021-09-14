@@ -7,8 +7,7 @@ const Navbar = (props) => {
   const [navState, setNavState] = useState(
     props.type === 'setting' && 'acc' ||
     props.type === 'security' && 'scan'
-    )
-
+    );
   return (
     <div className='navbar'>
       {

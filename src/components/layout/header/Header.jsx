@@ -10,6 +10,7 @@ import { ReactComponent as ProfileIcon } from '../../../assets/profile.svg';
 import './Header.scss'
 
 const Header = (props) => {
+  console.log('props=',props);
 
   return (
     <>

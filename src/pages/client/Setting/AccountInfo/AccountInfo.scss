@@ -32,3 +32,18 @@
     font-weight: 600;
   }
 }
+
+.info-container {
+  .inforow-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #707070;
+  }
+
+  .website-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
