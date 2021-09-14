@@ -34,7 +34,7 @@ const SecondStep = (props) => {
                     label="Position" name="position"
                     className="form-control"
                     handleChange={handleChange} />
-                <Button class="custom-btn custom-btn-primary" title="Next" handleClick={props.handleNext} />
+                <Button className="custom-btn custom-btn-primary" title="Next" handleClick={props.handleNext} />
             </div>
         </>
     )

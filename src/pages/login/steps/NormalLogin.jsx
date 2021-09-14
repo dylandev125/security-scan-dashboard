@@ -11,21 +11,21 @@ const NormalLogin = (props) => {
   }
 
   const handleSignup = (e) => {
-    
+
   }
-  
+
   return (
     <div className="form">
       <EmailField name="email" className="form-control" handleChange={handleChange} />
       <PasswordField name="password" className="form-control" handleChange={handleChange}/>
       <ForgotPassword />
-      <Button class="custom-btn custom-btn-primary" title="Log In" handleClick={props.handleLogin}/>
+      <Button className="custom-btn custom-btn-primary" title="Log In" handleClick={props.handleLogin}/>
       <div className="or-line">
         <div></div>
         <div className="text">or</div>
         <div></div>
       </div>
-      <Button class="custom-btn mt-2-5" title="Sign Up for Free" handleClick={props.handleSignup}/>
+      <Button className="custom-btn mt-2-5" title="Sign Up for Free" handleClick={props.handleSignup}/>
     </div>
   )
 }

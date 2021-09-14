@@ -38,3 +38,12 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .navbar{
+    .navItem {
+      margin: 0 10px;
+    }
+  }
+}

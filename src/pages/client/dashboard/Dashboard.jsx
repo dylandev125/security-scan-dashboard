@@ -8,24 +8,25 @@ const Dashboard = () => {
     <>
       <Layout type={'dashboard'}>
         <div className='content-wrapper'>
-          <div className='DB-Box'>
-            <div className="topTitle"><span className="topTitle-text">REPORTS SUMMARY</span></div>
-            <table>
-              <thead>
-                <tr>
-                  <th className='title-id'>Report ID</th>
-                  <th className='title-des'>Description of problems</th>
-                  <th className='title-risk'>Risk level</th>
-                  <th className='title-inst'>Number of Instances</th>
-                  <th className='title-btn'></th>
-                </tr>
-              </thead>
-            </table>
-            <ReportSummary/>
-            <ReportSummary/>
-
-
-         </div>
+          <div className="title-box">
+            <div className='DB-Box'>
+              <div className="topTitle"><span className="topTitle-text">REPORTS SUMMARY</span></div>
+              <table>
+                <thead>
+                  <tr>
+                    <th className='title-id'>Report ID</th>
+                    <th className='title-des'>Description of problems</th>
+                    <th className='title-risk'>Risk level</th>
+                    <th className='title-inst'>Number of Instances</th>
+                    <th className='title-btn'></th>
+                  </tr>
+                </thead>
+              </table>
+              <ReportSummary/>
+              <ReportSummary/>
+              <ReportSummary/>
+          </div>
+        </div>
           <div className='Risk-Tab'>
             <div className="topTitle"><span className="topTitle-text">RISK SCORES</span></div>
             <PieChart/>
