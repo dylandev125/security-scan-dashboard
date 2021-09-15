@@ -28,7 +28,7 @@ const SupportMini = () => {
       <div className="info-header">
         <span className="medium-text">Message</span>
         <textarea type="text" className="message" placeholder="Tell us more about problem..."/>
-        <Button class="custom-btn custom-btn-primary" title="Send"/>
+        <Button className="custom-btn custom-btn-primary" title="Send"/>
       </div>
 
     </div>
