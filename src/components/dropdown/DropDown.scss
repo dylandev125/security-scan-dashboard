@@ -1,40 +1,4 @@
-.btn-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    width: 142px;
-    border-radius: 10px;
-    border: solid 2px #779eff;
-    background-color: #fff;
-    color: #232323;
-    font-family: Avenir;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 35px;
-    transition: all 0.1s ease-in;
-    cursor: pointer;
-
-    &.active {
-        border-color: #2f6bff;
-        background-color: #2f6bff;
-    }
-
-    &:hover {
-        border-color: #2f6bff;
-        background-color: #2f6bff;
-        color: white;
-    }
-
-    &:focus {
-        border-color: #2f6bff;
-        background-color: #2f6bff;
-        color: white;
-    }
-}
-
-#dropdown-pagination-button,
-#dropdown-payment-button {
+.dropdown-toggle.btn {
     width: 142px;
     height: 35px;
     font-size: 14px;

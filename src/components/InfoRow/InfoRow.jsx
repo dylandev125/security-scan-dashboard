@@ -12,4 +12,4 @@ const CompanyInfo = (props) => {
   )
 }
 
-export default CompanyInfo
+export default CompanyInfo;
