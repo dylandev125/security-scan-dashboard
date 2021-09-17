@@ -10,15 +10,27 @@ const SecurityScanPage = lazy(() => retry(() => import("../pages/client/security
 const CustomerBillingPage = lazy(() => retry(() => import("../pages/client/Billing/Billing")))
 const CustomerSettingPage = lazy(() => retry(() => import("../pages/client/Setting/Setting")))
 
+const AdminDashboard = lazy(() => retry(() => import("../pages/admin/Dashboard/Dashboard")));
+const AdminSupport = lazy(() => retry(() => import("../pages/admin/Support/Support")));
+const AdminSecurity = lazy(() => retry(() => import("../pages/admin/Security/Security")));
+const AdminBilling = lazy(() => retry(() => import("../pages/admin/Billing/Billing")));
+const AdminSetting = lazy(() => retry(() => import("../pages/admin/Setting/Setting")));
+
 const AppRoutes = () => {
   return (
     <Switch>
       <Route path="/signup" component={SignupPage} />
       <Route path={["/", "/login"]} exact={true} component={LoginPage} />
-      <Route path="/scan" exact={true} component={SecurityScanPage} />
-      <Route path="/dashboard" component={CustomerDashboardPage} />
-      <Route path="/billing" component={CustomerBillingPage} />
-      <Route path="/setting" component={CustomerSettingPage} />
+      <Route path="/customer/dashboard" component={CustomerDashboardPage} />
+      <Route path="/customer/security" exact={true} component={SecurityScanPage} />
+      <Route path="/customer/billing" component={CustomerBillingPage} />
+      <Route path="/customer/setting" component={CustomerSettingPage} />
+
+      <Route path="/admin/dashboard" component={AdminDashboard} />
+      <Route path="/admin/support" component={AdminSupport} />
+      <Route path="/admin/security" component={AdminSecurity} />
+      <Route path="/admin/billing" component={AdminBilling} />
+      <Route path="/admin/setting" component={AdminSetting} />
     </Switch>
   )
 }

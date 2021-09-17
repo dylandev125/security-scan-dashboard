@@ -5,12 +5,13 @@ import { ReactComponent as Scan } from '../../../assets/scan.svg'
 import { ReactComponent as Shield } from '../../../assets/Shield Done.svg'
 import { ReactComponent as Paper } from '../../../assets/Paper.svg'
 import { ReactComponent as Setting } from '../../../assets/Setting.svg'
+import { ReactComponent as Support } from '../../../assets/message.svg'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 const Sidebar = (props) => {
   const [layState, setLayState] = useState(false)
-  console.log(layState)
+  const userType = props.userType
 
   return (
     <div className='sidebar'>
@@ -37,28 +38,39 @@ const Sidebar = (props) => {
         <div className={"sidebar-link " + (props.type === 'dashboard' ? "active" : "")}>
           <div className="icon-wrapper">
             <div className="sidebar-backlay"></div>
-            <Link to='/dashboard'> <Home/> </Link>
+            <Link to={'/' + userType +'/dashboard'}> <Home/> </Link>
           </div>
           {
-            layState && ( <div className="text-wrapper"><Link to='/dashboard'>DASHBOARD</Link></div>)
+            layState && ( <div className="text-wrapper"><Link to={'/' + userType +'/dashboard'}>DASHBOARD</Link></div>)
           }
         </div>
+        {userType === 'admin' && (
+          <div className={"sidebar-link " + (props.type === 'support' ? "active" : "")}>
+            <div className="icon-wrapper">
+              <div className="sidebar-backlay"></div>
+              <Link to={'/' + userType +'/support'}> <Support/> </Link>
+            </div>
+            {
+              layState && ( <div className="text-wrapper"><Link to={'/' + userType +'/support'}>SUPPORT</Link></div>)
+            }
+          </div>
+        )}
         <div className={"sidebar-link " + (props.type === 'security' ? "active" : "")}>
           <div className="icon-wrapper">
             <div className="sidebar-backlay"></div>
-            <Link to='/scan'> <Shield /> </Link>
+            <Link to={'/' + userType +'/security'}> <Shield /> </Link>
           </div>
           {
-            layState && ( <div className="text-wrapper"><Link to='/scan'>SECURITY TESTING</Link></div>)
+            layState && ( <div className="text-wrapper"><Link to={'/' + userType +'/scan'}>SECURITY TESTING</Link></div>)
           }
         </div>
         <div className={"sidebar-link " + (props.type === 'billing' ? "active" : "")}>
           <div className="icon-wrapper">
             <div className="sidebar-backlay"></div>
-            <Link to='/billing'> <Paper/> </Link>
+            <Link to={'/' + userType +'/billing'}> <Paper/> </Link>
           </div>
           {
-            layState && ( <div className="text-wrapper"><Link to='/billing'>BILLING HISTORY</Link></div>)
+            layState && ( <div className="text-wrapper"><Link to={'/' + userType +'/billing'}>BILLING HISTORY</Link></div>)
           }
         </div>
       </div>
@@ -66,10 +78,10 @@ const Sidebar = (props) => {
         <div className={"sidebar-link " + (props.type === 'setting' ? "active" : "")}>
           <div className="icon-wrapper">
             <div className="sidebar-backlay"></div>
-            <Link to='/setting'> <Setting/> </Link>
+            <Link to={'/' + userType +'/setting'}> <Setting/> </Link>
           </div>
           {
-            layState && ( <div className="text-wrapper"><Link to='/setting'>SETTINGS</Link></div>)
+            layState && ( <div className="text-wrapper"><Link to={'/' + userType +'/setting'}>SETTINGS</Link></div>)
           }
         </div>
       </div>

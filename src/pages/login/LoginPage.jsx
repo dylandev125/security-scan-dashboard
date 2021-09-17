@@ -40,7 +40,7 @@ const LoginPage = (props) => {
   };
 
   const handleOTP = () => {
-    history.push('/dashboard');
+    history.push('/customer/dashboard');
   };
 
   const StepComponent = loginComponents[state.currentStep];

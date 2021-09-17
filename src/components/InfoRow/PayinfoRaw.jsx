@@ -13,6 +13,7 @@ const PayinfoRaw = (props) => {
 
       </div>
       <div className='info-content'>{props.content}</div>
+      <div className='info-choose'></div>
       <div className='info-btn'>
         <button className='edit-btn'>{props.btn}</button>
       </div>

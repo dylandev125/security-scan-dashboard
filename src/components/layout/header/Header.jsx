@@ -17,7 +17,7 @@ const Header = (props) => {
       <div className='logo'><Link className="logo-link" to="/">Logo</Link></div>
 
       <div className=''>
-      {props.type === 'dashboard' && (
+      {props.type === 'dashboard' && props.userType === 'customer' &&(
         <Dropdown>
           <Dropdown.Toggle id='dropdown-basic' className='search-tab'>
             Website List
@@ -44,7 +44,7 @@ const Header = (props) => {
 
     </div>
     {props.type !== 'login' && (
-      <Navbar type={props.type} handleClick={props.handleClick} />
+      <Navbar type={props.type} userType={props.userType} handleClick={props.handleClick} />
     )}
     </>
   )
