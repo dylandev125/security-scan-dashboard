@@ -12,7 +12,7 @@ const Security = () => {
     history.push(`/admin/setting/code-generator`);
   }
   return (
-    <Layout type='Security' userType='admin'>
+    <Layout type='setting' userType='admin'>
       <BaseTable
         ribon="USERS"
         tableHeader={[{ prefix: 'p' }, { prefix: 'g', label: 'Add Admin' }, { prefix: 'g', label: 'Add User' }, { prefix: 'g', label: 'Create Code', handleClick: goCodeGenerator }]}

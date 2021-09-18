@@ -10,7 +10,6 @@ import { ReactComponent as ProfileIcon } from '../../../assets/profile.svg';
 import './Header.scss'
 
 const Header = (props) => {
-
   return (
     <>
     <div className='header'>

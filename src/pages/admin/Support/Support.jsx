@@ -11,7 +11,7 @@ const Support = () => {
   }
 
   return (
-    <Layout type='Support' userType='admin'>
+    <Layout type='support' userType='admin'>
       <BaseTable
         className="support-table"
         ribon="QUESTIONS"

@@ -5,7 +5,7 @@ import './Payments.scss'
 
 const Payments = () => {
   return (
-    <Layout type='Payments' userType='admin'>
+    <Layout type='billing' userType='admin'>
       <BaseTable
         className="payment-wrapper"
         hasSearchBox

@@ -5,20 +5,20 @@ import Profile from './Profile'
 import Security from './Security'
 import 'react-calendar/dist/Calendar.css';
 
-import AddUser from './AddUser'
+import Accounts from './main/Account'
 
-const Setting = () => {
+const Setting = (props) => {
   const [nav, setNav] = useState('acc');
 
-  const onhandleClick = (nav) => {
+  const handleClick = (nav) => {
     setNav(nav);
   }
 
   return(
-    <Layout type='setting' userType='admin' handleClick={onhandleClick}>
+    <Layout type='setting' userType='admin' handleClick={handleClick}>
       {
         nav === 'acc' && (
-          <AddUser />
+          <Accounts />
         ) ||
         nav === 'pro' && (
           <Profile />

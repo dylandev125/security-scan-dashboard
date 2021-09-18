@@ -11,7 +11,7 @@ const Security = () => {
   }
 
   return (
-    <Layout type='Security' userType='admin'>
+    <Layout type='security' userType='admin'>
       <BaseTable
         ribon="SCANS"
         tableHeader={[{ prefix: 'd' }, { prefix: 'p' }, { prefix: 'g', label: 'Standard' }, { prefix: 'g', label: 'Premium' }]}

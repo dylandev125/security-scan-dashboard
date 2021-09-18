@@ -13,8 +13,6 @@ const Navbar = (props) => {
     props.type === 'setting' && 'acc' ||
     props.type === 'security' && 'scan');
 
-  console.log(props.type)
-  console.log(props.userType)
   return (
     <div className='navbar'>
       {props.userType==='customer' && (
@@ -38,6 +36,7 @@ const Navbar = (props) => {
             </>
           ) ||
           props.type === 'setting' && (
+
           <>
             <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {props.handleClick('acc'); setNavState('acc')}}>
               <span className={'nav-title-payment ' + (navState === 'acc' ? 'active' : '')}>ACCOUNT INFORMATION</span>
@@ -82,6 +81,9 @@ const Navbar = (props) => {
 
         props.type === 'setting' && (
         <>
+          {
+            console.log('I came here.')
+          }
           <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {props.handleClick('acc');setNavState('acc') }}>
             <span className={'nav-title-payment ' + (navState === 'acc' ? 'active' : '')}>ACCOUNTS</span>
           </div>
