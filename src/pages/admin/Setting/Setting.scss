@@ -1,0 +1,76 @@
+.setting-wrapper {
+  padding: 60px 165px 140px 165px;
+
+}
+
+.box-info {
+  background-color: white;
+  padding: 20px 25px 30px 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+
+  .btn-back {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: center;
+
+  .save-btn {
+    width: 140px;
+    height: 35px;
+    border: 2px solid #0071fb;
+    background-color: #0071fb;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+}
+
+.choose-type {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #cddbff;
+  padding: 15px 0px;
+}
+
+.big-caption {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #232323;
+  display: block;
+}
+
+.small-text {
+  color: #707070;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.medium-text {
+  font-size: 1.2rem;
+  color: #232323;
+  font-weight: 600;
+}
+
+.normal-text {
+  font-size: 1.2rem;
+  color: #232323;
+  font-weight: normal;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .setting-wrapper {
+    padding: 60px 50px 140px 50px;
+  }
+}

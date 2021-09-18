@@ -14,6 +14,7 @@ const MSortTable = (props) => {
   const [order, setOrder] = useState('desc')
 
   const createSortHandler = (field) => {
+    console.log(field)
     field === orderBy
       ? setOrder(order === 'asc' ? 'desc' : 'asc')
       : setOrderBy(field)
@@ -21,10 +22,11 @@ const MSortTable = (props) => {
 
   const stableSort = (array) => {
     const stabilizedThis = array.map((el) => el)
+    if ( !orderBy ) return stabilizedThis
     stabilizedThis.sort((a, b) => {
       let f, s
-      f = a[orderBy]===null || a[orderBy] === '' ? 0xffff: a[orderBy]
-      s = b[orderBy] === null || b[orderBy] === '' ? 0xffff: b[orderBy]
+      f = a[orderBy].props.children
+      s = b[orderBy].props.children
       return order === 'asc' ? (f > s ? 1 : -1) : (s > f ? 1: -1)
     })
     return stabilizedThis.map((el) => el)

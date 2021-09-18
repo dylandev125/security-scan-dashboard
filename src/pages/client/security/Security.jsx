@@ -22,7 +22,7 @@ const Security = () => {
     const CurrentComponent = components[state.tab];
     return (
         <>
-            <Layout type='security' handleClick={handleClick}>
+            <Layout type='security' userType={'customer'} handleClick={handleClick}>
                 <CurrentComponent></CurrentComponent>
             </Layout>
         </>

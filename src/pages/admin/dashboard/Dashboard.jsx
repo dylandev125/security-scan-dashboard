@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import Layout from '../../../components/layout/Layout'
 import BaseTable from "../../../components/base-table/BaseTable";
 import { TableColumns, Item, SampleData } from "./PageBuilder";
-import './Dashboard.scss';
+import './Dashboard.scss'
 
 const Dashboard = () => {
-
   return (
-    <>
+    <Layout type='dashboard' userType='admin'>
       <BaseTable
         hasSearchBox
+        ribon="USERS"
         tableHeader={[{ prefix: 'd' }, { prefix: 'p' }]}
         tableData={{
           columns: TableColumns,
@@ -17,8 +17,8 @@ const Dashboard = () => {
           )
         }}
       />
-    </>
-  );
-};
+    </Layout>
+  )
+}
 
-export default Dashboard;
+export default Dashboard

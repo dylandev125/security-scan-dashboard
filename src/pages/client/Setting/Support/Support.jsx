@@ -1,6 +1,13 @@
+import './Support.scss'
+import FAQ from  './FAQ'
+import SupportMini from './Support_mini'
+
 const Support = () => {
   return (
-    <div></div>
+    <div className='setting-wrapper-support'>
+      <FAQ/>
+      <SupportMini/>
+    </div>
   )
 }
 

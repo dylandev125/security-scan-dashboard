@@ -1,126 +1,163 @@
 .base-table-wrapper {
-    width: 90%;
-    margin: 61px auto 145px auto;
-    position: relative;
-    
-    .ribon {
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      position: absolute;
-      top: -18px;
-      left: 0;
-      height: 19px;
-      padding: 1px 20px 4px;
-      color: white;
-      background-color: #5284ff;
-      font-size: 12px;
-    }
-  
-    .panel-primary {
-      display: block;
-      height: auto;
-  
-      .base-table-header {
+  width: 90%;
+  margin: 61px auto 145px auto;
+  position: relative;
+
+  .ribon {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    height: 18px;
+    padding: 1px 20px 4px;
+    color: white;
+    background-color: #5284ff;
+    font-size: 12px;
+  }
+
+  .panel-primary {
+    display: block;
+    height: auto;
+
+    .filter-wrapper {
+      margin: 15px 0;
+      margin-left: 3px;
+
+      .filter-title {
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      .filter-body {
+        margin-top: 5px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-  
-        .datepicker-wrapper {
-          height: 35px;
-          .react-datepicker-wrapper {
-            width: auto;
-            font-size: 14px;
-  
-            input {
-              width: 100px;
-              border: none;
-              text-align: center;
-              &:focus {
-                border: none;
-                outline: none;
-              }
-  
-              &:focus-visible {
-                outline: none;
-              }
-            }
+
+        .filter-checkbox {
+          margin-right: 25px;
+          font-size: 14px;
+
+          label {
+            line-height: 24px;
           }
-  
-          .react-datepicker__tab-loop {
-            z-index: 3;
-            position: absolute;
-          }
-        }
-  
-        .button-group {
-          width: 50%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
-  
-        .base-table-search-box {
-          width: 30%;
         }
       }
-  
-      .MuiPaper-rounded {
-        box-shadow: none;
-  
-        table {
-          th {
-            background-color: white;
-  
-            span {
-              font-size: 14px;
+    }
+
+    .base-table-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .datepicker-wrapper {
+        height: 35px;
+
+        .react-datepicker-wrapper {
+          width: auto;
+          font-size: 14px;
+
+          input {
+            width: 100px;
+            border: none;
+            text-align: center;
+
+            &:focus {
+              border: none;
+              outline: none;
+            }
+
+            &:focus-visible {
+              outline: none;
             }
           }
-  
-          td {
-            font-size: 12px;
-          }
-  
+        }
+
+        .react-datepicker__tab-loop {
+          z-index: 3;
+          position: absolute;
+        }
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        button {}
+      }
+
+      .base-table-search-box {
+        width: 313px;
+        align-self: center;
+      }
+    }
+
+    .MuiPaper-rounded {
+      box-shadow: none;
+
+      table {
+        margin-top: 14px;
+        border-top: 1px solid #dddddd;
+
+        th {
+          background-color: white;
+          padding: 20px 5px;
+
           span {
-            display: block;
-          }
-  
-          .payment-method {
-            border-radius: 3px;
-            background-color: #0071fb;
-            width: 36px;
-            height: 26px;
-            font-size: 10px;
-            color: white;
+            font-size: 14px;
+            font-family: Avenir;
             font-weight: 900;
-            display: flex;
-            align-items: center;
-            justify-content: center;
           }
-  
-          .paypal {
-            font-size: 8px;
-            font-style: italic;
-            font-weight: 400;
-          }
-  
-          .print-icon {
-            border: none;
-            background-color: transparent;
-          }
-  
-          .paid {
-            color: #37b96b;
-          }
-  
-          .unpaid {
-            color: #ff6d6d;
-          }
-  
-          .tab-icon {
-            display: inline;
-            margin-left: 11px;
-          }
+        }
+
+        td {
+          padding: 20px 5px;
+          font-size: 12px;
+        }
+
+        span {
+          display: block;
+        }
+
+        .payment-method {
+          border-radius: 3px;
+          background-color: #0071fb;
+          width: 36px;
+          height: 26px;
+          font-size: 10px;
+          color: white;
+          font-weight: 900;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .paypal {
+          font-size: 8px;
+          font-style: italic;
+          font-weight: 400;
+        }
+
+        .print-icon {
+          border: none;
+          background-color: transparent;
+        }
+
+        .paid {
+          color: #37b96b;
+        }
+
+        .unpaid {
+          color: #ff6d6d;
+        }
+
+        .tab-icon {
+          display: inline;
+          margin-left: 11px;
         }
       }
     }
   }
+}

@@ -18,7 +18,7 @@ const Billing = () => {
   const datas = [PaidData, UnpaidData];
   const curData = datas[tab];
   return (
-    <Layout type={'billing'}>
+    <Layout type={'billing'} userType={'customer'}>
       <div className='billing-wrapper'>
         <Panel>
           <div className="billing-header">

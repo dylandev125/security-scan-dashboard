@@ -13,7 +13,7 @@ const Setting = () => {
     setCurrentComp(nav)
   }
   return (
-    <Layout type={'setting'} handleClick={handleClick}>
+    <Layout type={'setting'} userType={'customer'} handleClick={handleClick}>
       {
         currentComp === 'acc' && (
           <AccountInfo />

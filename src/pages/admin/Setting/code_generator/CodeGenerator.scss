@@ -1,0 +1,28 @@
+.payment-method {
+  letter-spacing: 0px;
+}
+
+.Code-Generator-Table {
+  table th {
+    border-bottom: none;
+  }
+
+  .code-description {
+    width: 90%;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: solid 1px #779eff;
+    background-color: #fff;
+
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+
+  strong {
+    font-size: 14px;
+    font-family: Avenir;
+    font-weight: 900;
+  }
+}

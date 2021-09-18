@@ -9,10 +9,10 @@ const Layout = (props) => {
   return (
     <>
       {props.type !== 'login' &&
-        <Sidebar type={props.type}/>
+        <Sidebar type={props.type} userType={props.userType}/>
       }
       <div className={(props.type === 'login' ? "login-main-layout" : "main-layout")}>
-        <Header type={props.type}  handleClick={props.handleClick} />
+        <Header type={props.type} userType={props.userType} handleClick={props.handleClick} />
         {props.children}
         <Footer type={props.type} />
       </div>

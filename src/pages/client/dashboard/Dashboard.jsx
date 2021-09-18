@@ -6,7 +6,7 @@ import './Dashboard.scss'
 const Dashboard = () => {
   return (
     <>
-      <Layout type={'dashboard'}>
+      <Layout type={'dashboard'} userType={'customer'}>
         <div className='content-wrapper'>
           <div className="title-box">
             <div className='DB-Box'>
