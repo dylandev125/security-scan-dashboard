@@ -7,7 +7,6 @@ import './Setting.scss'
 
 const AddUser = () => {
   return (
-    <Layout type='setting' userType='admin'>
       <div className="setting-wrapper">
 
         <div className="box-info">
@@ -56,7 +55,6 @@ const AddUser = () => {
           <button className='save-btn'>Save</button>
         </div>
       </div>
-    </Layout>
   )
 }
 

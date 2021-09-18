@@ -37,7 +37,7 @@ const Dashboard = () => {
             <div className="riskView"><div className="criticalBox"></div> <span className="riskText">Critical Risk (CVSSv3 9.0 - 10.00)</span></div>
             <div className="riskView"><div className="highBox"></div> <span className="riskText">High Risk (CVSSv3 7.0 - 8.9)</span> </div>
             <div className="riskView"><div className="mediumBox"></div> <span className="riskText">Medium Risk (CVSSv3 4.0 - 6.9)</span></div>
-            <div className="riskView"><div className="lowBox"></div> <span className="riskText">Medium Risk (CVSSv3 4.0 - 6.9)</span></div>
+            <div className="riskView"><div className="lowBox"></div> <span className="riskText">Low Risk (CVSSv3 0.1 - 3.9)</span></div>
             <div className="riskView"><div className="infoBox"></div><span className="riskText">Informative</span></div>
           </div>
         </div>

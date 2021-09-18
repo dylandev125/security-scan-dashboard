@@ -1,26 +1,32 @@
 import './Setting.scss'
 import { useState } from 'react'
 import Layout from '../../../components/layout/Layout'
-import Panel from '../../../components/panel'
-import MSortTable from '../../../components/SortTable'
-import Button from '../../../components/button'
-import CustomDatePicker from '../../../components/datepicker'
-import SearchBox from '../../../components/search-box'
-import { PaidData, UnpaidData } from './data'
+import Profile from './Profile'
+import Security from './Security'
 import 'react-calendar/dist/Calendar.css';
 
 import AddUser from './AddUser'
 
 const Setting = () => {
-  const [tab, setTab] = useState(0);
+  const [nav, setNav] = useState('acc');
 
-  const handleClick = (tabIndex) => {
-    setTab(tabIndex);
+  const onhandleClick = (nav) => {
+    setNav(nav);
   }
-  const datas = [PaidData, UnpaidData];
-  const curData = datas[tab];
+
   return(
-    <AddUser/>
+    <Layout type='setting' userType='admin' handleClick={onhandleClick}>
+      {
+        nav === 'acc' && (
+          <AddUser />
+        ) ||
+        nav === 'pro' && (
+          <Profile />
+        ) ||
+        nav === 'sec' && (
+          <Security/>
+      )}
+    </Layout>
   )
 }
 

@@ -1,11 +1,11 @@
-import InfoRow from '../../../../components/InfoRow/InfoRow'
+import InfoRow from '../../../components/InfoRow/InfoRow'
 
 const Security = () => {
   return (
     <div className='setting-wrapper'>
       <div className='box-info'>
         <div className='info-header'>
-        <span className='big-caption'>Password & Security</span>
+          <span className='big-caption'>Password & Security</span>
           <span className='small-text'>
           Make sure your password is strength enough and we recommend update your password every quarter.
           </span>
