@@ -82,13 +82,13 @@ const Navbar = (props) => {
 
         props.type === 'setting' && (
         <>
-          <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {setNavState('acc')}}>
+          <div className={'navItem ' + (navState === 'acc' ? 'active' : '')} onClick={() => {props.handleClick('acc');setNavState('acc') }}>
             <span className={'nav-title-payment ' + (navState === 'acc' ? 'active' : '')}>ACCOUNTS</span>
           </div>
-          <div className={'navItem ' + (navState === 'pro' ? 'active' : '')} onClick={() => {setNavState('pro')}}>
+          <div className={'navItem ' + (navState === 'pro' ? 'active' : '')} onClick={() => {props.handleClick('pro');setNavState('pro')}}>
             <span className={'nav-title-payment ' + (navState === 'pro' ? 'active' : '')}>PROFILE</span>
           </div>
-          <div className={'navItem ' + (navState === 'sec' ? 'active' : '')} onClick={() => {setNavState('sec')}}>
+          <div className={'navItem ' + (navState === 'sec' ? 'active' : '')} onClick={() => {props.handleClick('sec');setNavState('sec')}}>
             <span className={'nav-title-payment ' + (navState === 'sec' ? 'active' : '')}>SECURITY</span>
           </div>
         </>
