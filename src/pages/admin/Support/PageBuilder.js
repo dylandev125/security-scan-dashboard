@@ -1,4 +1,4 @@
-import SmallButton from '../../../components/button/SmallButton';
+import MessageStatusButton from '../../../components/button/MessageStatusButton';
 import Button from '../../../components/button/Button';
 import { ReactComponent as ScrollIcon } from '../../../assets/scroll.svg';
 import { ReactComponent as UploadIcon } from '../../../assets/upload.svg';
@@ -42,7 +42,7 @@ const Item = (data, handleClick) => {
         ticket_no: <span>{data.ticket_no}</span>,
         company: <span>{data.company}</span>,
         topic: <span>{data.topic}</span>,
-        status: <span style={{color: statusStyles[data.status]}}>{status[data.status]}</span>,
+        status: <span><MessageStatusButton /></span>,
         button: <span style={{...styles, justifyContent: 'flex-end'}}><Button handleClick={handleClick} label='View ticket' /></span>,
     }
 }

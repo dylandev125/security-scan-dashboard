@@ -56,11 +56,18 @@ const Navbar = (props) => {
 
 
       props.userType==='admin' && (
-        (props.type === 'dashboard' || props.type === 'security') && (
+        props.type === 'dashboard' && (
           <>
             <div className='navItem active'><User1 /><span className='nav-title'>NEW USERS</span> <span className='value-text'>24</span></div>
             <div className='navItem active'><User2 /><span className='nav-title'>NEW USERS</span> <span className='value-text'>349</span></div>
-            <div className='navItem active'><Total /><span className='nav-title'>TOTAL</span>        <span className='value-text'>3985</span> </div>
+            <div className='navItem active'><Total /><span className='nav-title'>TOTAL</span> <span className='value-text'>3985</span> </div>
+          </>
+        ) ||
+        props.type === 'security' && (
+          <>
+            <div className='navItem active'><User1 /><span className='nav-title'>NEW SCANS 24H</span> <span className='value-text'>24</span></div>
+            <div className='navItem active'><User2 /><span className='nav-title'>SCANS IN 7 DAYS</span> <span className='value-text'>349</span></div>
+            <div className='navItem active'><Total /><span className='nav-title'>TOTAL(SCANS MODE)</span> <span className='value-text'>3985</span> </div>
           </>
         ) ||
         props.type === 'billing' && (

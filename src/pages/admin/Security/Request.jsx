@@ -1,6 +1,6 @@
 import Layout from '../../../components/layout/Layout'
-import DatePicker from '../../../components/datepicker'
 import Button from '../../../components/button'
+import DateButton from '../../../components/button/DateButton'
 import DropdownMenu from '../../../components/dropdown/DropdownMenu'
 import ReportSummary from '../../../components/RequestSummary/RequestSummary'
 import SmallButton from '../../../components/button/SmallButton'
@@ -20,7 +20,9 @@ const Request = () => {
               <span className="medium-caption">Request Number</span>
               <span className="medium-text">#000029</span>
             </div>
-            <DatePicker/>
+
+            <DateButton label="Aug 30" />
+
             <Button label='Premium'/>
             <div className="caption">
               <span className="medium-caption">Company</span>
