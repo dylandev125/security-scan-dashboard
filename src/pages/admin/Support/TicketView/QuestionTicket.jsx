@@ -13,7 +13,7 @@ const QuestionTicket = () => {
   }
 
   return (
-    <Layout type='security' userType='admin'>
+    <Layout type='support' userType='admin'>
       <div className="question-wrapper">
         <div className="box-info">
           <div className="ticket-header">

@@ -1,152 +1,152 @@
 .question-wrapper {
   padding: 60px 90px;
-}
 
-.box-info {
-  background-color: white;
-  padding: 20px 20px 30px 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  position: relative;
-
-  .ribon {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    position: absolute;
-    top: -18px;
-    left: 0;
-    height: 19px;
-    padding: 1px 20px 4px;
-    color: white;
-    background-color: #5284ff;
-    font-size: 12px;
-  }
-
-  .ticket-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #5384fe;
-    padding: 5px 0;
-
-    .Ticket-No {
+  .box-info {
+    background-color: white;
+    padding: 20px 20px 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    min-height: 571px;
+    .ribon {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      position: absolute;
+      top: -18px;
+      left: 0;
       height: 19px;
-      font-size: 14px;
-      font-weight: 900;
-      color: #232323;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .Opened,
-    .Open-date-value {
+      padding: 1px 20px 4px;
+      color: white;
+      background-color: #5284ff;
       font-size: 12px;
-      font-weight: 500;
-      color: #232323;
-      margin-right: 20px;
     }
-  }
 
-  .ticket-info {
-    display: flex;
-    align-items: center;
-    padding: 5px 0;
-    border-bottom: 1px solid #5384fe;
-
-    .Invoice-title,
-    .Invoice-value {
+    .ticket-header {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #5384fe;
+      padding: 5px 0;
 
-      font-size: 12px;
-      font-weight: 900;
-      margin-right: 40px;
-
-      span:first-child {
+      .Ticket-No {
+        height: 19px;
+        font-size: 14px;
+        font-weight: 900;
+        color: #232323;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+      }
+
+      .Opened,
+      .Open-date-value {
+        font-size: 12px;
+        font-weight: 500;
+        color: #232323;
+        margin-right: 20px;
       }
     }
-  }
 
-  .message-wrapper {
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
+    .ticket-info {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      border-bottom: 1px solid #5384fe;
 
-    .Message {
-      display: block;
-      font-size: 12px;
-      font-weight: 900;
-      color: #707070;
-      margin-bottom: 10px;
+      .Invoice-title,
+      .Invoice-value {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        font-size: 12px;
+        font-weight: 900;
+        margin-right: 40px;
+
+        span:first-child {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
     }
 
-    .Message-Rectangle {
-      margin-bottom: 30px;
+    .message-wrapper {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+
+      .Message {
+        display: block;
+        font-size: 12px;
+        font-weight: 900;
+        color: #707070;
+        margin-bottom: 10px;
+      }
+
+      .Message-Rectangle {
+        margin-bottom: 30px;
+      }
+
+      .Message-Rectangle.left {
+        width: 60%;
+        margin: 0 0 5px;
+        padding: 5px 8px;
+        border-radius: 10px;
+        background-color: #0071fb;
+        align-self: flex-start;
+      }
+
+      .Message-Rectangle.right {
+        width: 60%;
+        margin: 0 0 5px;
+        padding: 5px 8px;
+        border-radius: 10px;
+        border: solid 1px #0071fb;
+        background-color: #fff;
+        align-self: flex-end;
+      }
+
+      .Message-Income,
+      .Message-Reply {
+        font-family: Avenir;
+        font-size: 12px;
+        text-align: left;
+        color: #232323;
+      }
+
+      .Message-Income {
+        color: white;
+      }
+
+      .Sent-date.income {
+        margin-left: 8px;
+      }
+
+      .Sent-date.reply {
+        align-self: flex-end;
+        margin-right: 8px;
+      }
     }
 
-    .Message-Rectangle.left {
-      width: 60%;
-      margin: 0 0 5px;
-      padding: 5px 8px;
-      border-radius: 10px;
-      background-color: #0071fb;
-      align-self: flex-start;
-    }
+    .message-sender {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
 
-    .Message-Rectangle.right {
-      width: 60%;
-      margin: 0 0 5px;
-      padding: 5px 8px;
-      border-radius: 10px;
-      border: solid 1px #0071fb;
-      background-color: #fff;
-      align-self: flex-end;
-    }
+      .message-send-box {
+        width: calc(100% - 60px - 142px);
+        margin-right: 20px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: solid 1px #779eff;
+        background-color: #fff;
 
-    .Message-Income,
-    .Message-Reply {
-      font-family: Avenir;
-      font-size: 12px;
-      text-align: left;
-      color: #232323;
-    }
-
-    .Message-Income {
-      color: white;
-    }
-
-    .Sent-date.income {
-      margin-left: 8px;
-    }
-
-    .Sent-date.reply {
-      align-self: flex-end;
-      margin-right: 8px;
-    }
-  }
-
-  .message-sender {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-    .message-send-box {
-      width: calc(100% - 60px - 142px);
-      margin-right: 20px;
-      height: 35px;
-      font-size: 14px;
-      border-radius: 5px;
-      border: solid 1px #779eff;
-      background-color: #fff;
-
-      &:focus-visible {
-        outline: 0;
+        &:focus-visible {
+          outline: 0;
+        }
       }
     }
   }
