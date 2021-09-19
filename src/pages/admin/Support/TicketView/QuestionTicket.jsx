@@ -2,10 +2,16 @@ import Layout from '../../../../components/layout/Layout'
 import Button from '../../../../components/button'
 import SmallButton from '../../../../components/button/SmallButton'
 import { ReactComponent as BackIcon } from '../../../../assets/back.svg'
+import { useHistory } from 'react-router'
 
 import './QuestionTicket.scss'
 
 const QuestionTicket = () => {
+  const history = useHistory()
+  const goBack = () => {
+    history.push('/admin/support')
+  }
+
   return (
     <Layout type='security' userType='admin'>
       <div className="question-wrapper">
@@ -16,7 +22,7 @@ const QuestionTicket = () => {
               <span className="Opened">Opened</span>
               <span className="Open-date-value">August 30, 2021</span>
             </div>
-            <SmallButton><BackIcon /></SmallButton>
+            <SmallButton handleClick={goBack}><BackIcon /></SmallButton>
           </div>
           <div className="ticket-info">
             <div className="Invoice-title">

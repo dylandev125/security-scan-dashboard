@@ -4,21 +4,22 @@ import Panel from '../panel'
 import Button from '../button'
 import PaginationButton from '../button/PaginationButton'
 import PaymentMethodButton from '../button/PaymentMethodButton'
+import SmallButton from '../button/SmallButton'
 import CustomDatePicker from '../datepicker'
 import SearchBox from '../search-box'
 import 'react-calendar/dist/Calendar.css';
 import './BaseTable.scss'
 import { Form } from "react-bootstrap";
-
+import { ReactComponent as BackIcon} from "../../assets/back.svg";
 /*
-* date-d, pagination-p, payment_method-m, general-g, filters-f,  
+* date-d, pagination-p, payment_method-m, general-g, filters-f,
 */
 const BaseTable = (props) => {
   const generateBtn = (btnInfo, index) => {
     switch (btnInfo.prefix) {
       case 'd':
         return (<div className="datepicker-wrapper" key={index}>
-          <CustomDatePicker label="All dates" />
+          <CustomDatePicker label="All Dates" />
         </div>);
       case 'p':
         return <PaginationButton key={index}></PaginationButton>;
@@ -47,8 +48,12 @@ const BaseTable = (props) => {
             </div>
             {
               props.hasSearchBox &&
+              <div className="panel-right-header">
               <div className="base-table-search-box">
                 <SearchBox />
+              </div>
+              {(props.backButton &&
+                <SmallButton handleClick={props.backButton.handleClick}><BackIcon /></SmallButton>)}
               </div>
             }
             {

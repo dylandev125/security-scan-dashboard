@@ -13,9 +13,12 @@ const AdminDashboardTest = lazy(() => retry(() => import("../pages/admin/Dashboa
 const AdminDashboard = lazy(() => retry(() => import("../pages/admin/Dashboard/Dashboard")));
 const AdminSupport = lazy(() => retry(() => import("../pages/admin/Support")));
 const AdminSecurity = lazy(() => retry(() => import("../pages/admin/Security/Security")));
+const AdminSecurityRequest = lazy(() => retry(() => import("../pages/admin/Security/Request")));
 const AdminBilling = lazy(() => retry(() => import("../pages/admin/Payments")));
-const AdminSetting = lazy(() => retry(() => import("../pages/admin/Setting/main")));
+const AdminSetting = lazy(() => retry(() => import("../pages/admin/Setting/Setting")));
 const AdminSettingCodeGenerator = lazy(() => retry(() => import("../pages/admin/Setting/code_generator")));
+const AdminSettingAccountSelect = lazy(() => retry(() => import("../pages/admin/Setting/AccountSelect")));
+const AdminSettingAddUser = lazy(() => retry(() => import("../pages/admin/Setting/AddUser")));
 const AdminSupportTicket = lazy(() => retry(() => import("../pages/admin/Support/TicketView/QuestionTicket")));
 
 const AppRoutes = () => {
@@ -32,10 +35,13 @@ const AppRoutes = () => {
       <Route path="/admin/dashboard" component={AdminDashboard} />
       <Route path="/admin/support" exact={true} component={AdminSupport} />
       <Route path="/admin/support/:id" component={AdminSupportTicket} />
-      <Route path="/admin/security" component={AdminSecurity} />
+      <Route path="/admin/security" exact={true} component={AdminSecurity} />
+      <Route path="/admin/security/:id" component={AdminSecurityRequest} />
       <Route path="/admin/billing" component={AdminBilling} />
       <Route path="/admin/setting" exact={true} component={AdminSetting} />
+      <Route path="/admin/setting/:id" exact={true} component={AdminSettingAccountSelect} />
       <Route path="/admin/setting/code-generator" exact={true} component={AdminSettingCodeGenerator} />
+      <Route path="/admin/setting/adduser" exact={true} component={AdminSettingAddUser} />
     </Switch>
   )
 }

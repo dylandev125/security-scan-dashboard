@@ -3,6 +3,7 @@ import DatePicker from '../../../components/datepicker'
 import Button from '../../../components/button'
 import DropdownMenu from '../../../components/dropdown/DropdownMenu'
 import ReportSummary from '../../../components/RequestSummary/RequestSummary'
+import SmallButton from '../../../components/button/SmallButton'
 import './Security.scss'
 import 'react-calendar/dist/Calendar.css';
 import { Link } from 'react-router-dom'
@@ -98,7 +99,7 @@ const Request = () => {
             </div>
           </div>
 
-          <div className="btn-back"><Link to='/admin/setting'><Back/></Link></div>
+          <div className="btn-back"><Link to='/admin/security'><SmallButton><Back/></SmallButton></Link></div>
           <div className="ribon">REQUEST #000029</div>
         </div>
       </div>

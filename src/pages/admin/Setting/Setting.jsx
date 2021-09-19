@@ -1,11 +1,11 @@
 import './Setting.scss'
 import { useState } from 'react'
 import Layout from '../../../components/layout/Layout'
+
+import Accounts from './main/Account'
 import Profile from './Profile'
 import Security from './Security'
 import 'react-calendar/dist/Calendar.css';
-
-import Accounts from './main/Account'
 
 const Setting = (props) => {
   const [nav, setNav] = useState('acc');

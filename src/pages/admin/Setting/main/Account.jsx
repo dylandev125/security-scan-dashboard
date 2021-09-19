@@ -7,15 +7,19 @@ import { useHistory } from 'react-router';
 const Security = () => {
   const history = useHistory();
   const handleClick = (index) => {
+    history.push(`/admin/setting/${index}`);
   }
   const goCodeGenerator = () => {
     history.push(`/admin/setting/code-generator`);
   }
+  const goAddUser = () => {
+    history.push(`/admin/setting/adduser`);
+  }
+
   return (
-    <Layout type='setting' userType='admin'>
       <BaseTable
         ribon="USERS"
-        tableHeader={[{ prefix: 'p' }, { prefix: 'g', label: 'Add Admin' }, { prefix: 'g', label: 'Add User' }, { prefix: 'g', label: 'Create Code', handleClick: goCodeGenerator }]}
+        tableHeader={[{ prefix: 'p' }, { prefix: 'g', label: 'Add Admin' }, { prefix: 'g', label: 'Add User', handleClick: goAddUser }, { prefix: 'g', label: 'Create Code', handleClick: goCodeGenerator }]}
         hasSearchBox
         tableData={{
           columns: TableColumns,
@@ -24,7 +28,6 @@ const Security = () => {
           )
         }}
       />
-    </Layout>
   )
 }
 

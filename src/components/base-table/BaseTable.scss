@@ -20,6 +20,11 @@
     display: block;
     height: auto;
 
+    .panel-right-header {
+      display: flex;
+      gap: 20px;
+    }
+
     .filter-wrapper {
       margin: 15px 0;
       margin-left: 3px;

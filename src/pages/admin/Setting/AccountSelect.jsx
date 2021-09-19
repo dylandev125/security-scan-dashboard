@@ -11,7 +11,7 @@ import Profile from './Profile'
 import Security from './Security'
 import { useHistory } from 'react-router'
 
-const AddUser = () => {
+const AccountSelect = () => {
   const history = useHistory();
   const [nav, setNavState] = useState('')
   const NavClick = (nav) => {
@@ -30,25 +30,11 @@ const AddUser = () => {
           <Security/>
       )}
       <div className="setting-wrapper">
+
         <div className="box-info">
-          <span className="big-caption">Account Type</span>
           <div className="btn-back"><Link to='/admin/setting'><SmallButton><Back/></SmallButton></Link></div>
-          <div className="choose-type">
-            <Button label='Client'/>
-            <Button label='Admin'/>
-          </div>
-        </div>
-
-        <div className="box-info">
-          <span className="big-caption">Plan Type</span>
-          <div className="choose-type">
-            <Button label='Standard'/>
-            <Button label='Premium'/>
-          </div>
-        </div>
-
-        <div className="box-info">
-          <span className="big-caption">Company Information</span>
+          <span className="big-caption">User #000123</span>
+          <span className="small-text">Example LLC</span>
           <InfoRow title="Company" content="Lucreds Inc." btn="Edit" />
           <InfoRow title="Reg. Number" content="EE12345678" btn="Edit" />
           <InfoRow title="Address" content="Meistri 16, Haabersti, Tallinn 13517 EE" btn="Edit" />
@@ -69,7 +55,7 @@ const AddUser = () => {
         <div className="box-info">
           <span className="big-caption">Website Information</span>
           <span className="small-text">Here you can add and edit website lists.</span>
-          <InfoRow title="Website" content="https://www.example.com" dropdown={true} btn="Edit" />
+          <InfoRow title="Website" content="https://www.example.com" dropdown={{btnlabel:'Verified'}} btn="Edit" />
         </div>
 
         <div className="footer-btn">
@@ -80,4 +66,4 @@ const AddUser = () => {
   )
 }
 
-export default AddUser
+export default AccountSelect
