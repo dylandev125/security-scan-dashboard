@@ -39,9 +39,9 @@ const AppRoutes = () => {
       <Route path="/admin/security/:id" component={AdminSecurityRequest} />
       <Route path="/admin/billing" component={AdminBilling} />
       <Route path="/admin/setting" exact={true} component={AdminSetting} />
-      <Route path="/admin/setting/:id" exact={true} component={AdminSettingAccountSelect} />
       <Route path="/admin/setting/code-generator" exact={true} component={AdminSettingCodeGenerator} />
       <Route path="/admin/setting/adduser" exact={true} component={AdminSettingAddUser} />
+      <Route path="/admin/setting/:id" component={AdminSettingAccountSelect} />
     </Switch>
   )
 }
