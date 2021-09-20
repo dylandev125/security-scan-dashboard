@@ -1,15 +1,17 @@
 import Button from '../../../components/button'
+import CustomInput from '../../../components/custom-input'
 import Layout from '../../../components/layout/Layout'
 import { Link } from 'react-router-dom'
 import { ReactComponent as Back } from '../../../assets/back.svg'
 import InfoRow from '../../../components/InfoRow/InfoRow'
 import SmallButton from '../../../components/button/SmallButton'
+import WebsiteListItem from '../../client/Setting/AccountInfo/WebsiteListItem'
 import { useState } from 'react'
-import './Setting.scss'
 import Accounts from './main/Account'
 import Profile from './Profile'
 import Security from './Security'
 import { useHistory } from 'react-router'
+import './Setting.scss'
 
 const AddUser = () => {
   const history = useHistory();
@@ -49,27 +51,30 @@ const AddUser = () => {
 
         <div className="box-info">
           <span className="big-caption">Company Information</span>
-          <InfoRow title="Company" content="Lucreds Inc." btn="Edit" />
-          <InfoRow title="Reg. Number" content="EE12345678" btn="Edit" />
-          <InfoRow title="Address" content="Meistri 16, Haabersti, Tallinn 13517 EE" btn="Edit" />
-          <InfoRow title="Company Size" content="Small Company" btn="Edit" />
+          <InfoRow title="Company" content=<CustomInput /> />
+          <InfoRow title="Reg. Number" content=<CustomInput /> />
+          <InfoRow title="Address" content=<CustomInput /> />
+          <InfoRow title="Company Size" content=<CustomInput /> />
         </div>
 
         <div className="box-info">
           <span className="big-caption">Contact Information</span>
           <span className="small-text">Contact information is private information, that is not visible to other users.</span>
-          <InfoRow title="Full Name" content="Allan Nalla" btn="Edit" />
-          <InfoRow title="CMO" content="Allan Nalla" btn="Edit" />
-          <InfoRow title="Phone" content="+372 555 55 555" btn="Edit" />
-          <InfoRow title="Email"
-            content={<>allan@lucreds.com<span style={{marginLeft: '10px'}} className="text-muted">Primary</span></>}
-            btn="Edit" />
+          <InfoRow title="Full Name" content=<CustomInput /> />
+          <InfoRow title="CMO" content=<CustomInput /> />
+          <InfoRow title="Phone" content=<CustomInput /> />
+          <InfoRow title="Email" content=<CustomInput /> />
         </div>
 
         <div className="box-info">
-          <span className="big-caption">Website Information</span>
-          <span className="small-text">Here you can add and edit website lists.</span>
-          <InfoRow title="Website" content="https://www.example.com" dropdown={true} btn="Edit" />
+          <div className="website-info-header">
+            <div className="website-info-text">
+              <span className="big-caption">Website Information</span>
+              <span className="small-text">Here you can add and edit website lists.</span>
+            </div>
+            <Button label="Add"/>
+          </div>
+          <InfoRow className="adduser-inforow" title="Website" content={<CustomInput />} dropdown={{btnlabel: 'Verified'}} btn="Edit" />
         </div>
 
         <div className="footer-btn">

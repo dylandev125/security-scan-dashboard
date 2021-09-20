@@ -4,7 +4,7 @@ import { Dropdown } from 'react-bootstrap'
 const CompanyInfo = (props) => {
 
   return (
-    <div className='info-container'>
+    <div className={'info-container ' + (props.className || '') }>
       <div className='info-title'>{props.title}</div>
       <div className='info-content'>{props.content}</div>
       <div className='info-choose'>
@@ -23,7 +23,9 @@ const CompanyInfo = (props) => {
         )}
       </div>
       <div className='info-btn'>
-        <button className='edit-btn' onClick={props.onClick}>{props.btn}</button>
+        {
+          props.btn && <button className='edit-btn' onClick={props.onClick}>{props.btn}</button>
+        }
       </div>
     </div>
   )

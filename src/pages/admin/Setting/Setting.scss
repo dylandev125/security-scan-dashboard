@@ -69,6 +69,22 @@
   display: block;
 }
 
+.adduser-inforow {
+  .info-choose {
+    justify-content: flex-end;
+  }
+}
+
+.website-info-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.website-info-text {
+
+}
 
 @media (max-width: 1024px) {
   .setting-wrapper {

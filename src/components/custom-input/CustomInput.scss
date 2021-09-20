@@ -1,0 +1,13 @@
+.Custom-Text-Input {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: solid 1px #779eff;
+    background-color: #fff;
+    padding-left: 5px;
+
+    &:focus-visible {
+      outline: 0;
+    }
+}
